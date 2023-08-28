@@ -585,6 +585,7 @@ header .navbar .logo-image img{
 }
 
 .our-propositions-inner{
+    border-top: 1px solid var(--borderColor);
     display: flex;
     align-items: center;
     padding-left: 40px;
