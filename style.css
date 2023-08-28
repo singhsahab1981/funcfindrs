@@ -1247,7 +1247,7 @@ ul.footer-links li a:hover {
 .top-border-new{
     border-top: 1px solid var(--borderColor);
 }
-.no-border{
+.no-border-inner-block .testimonial-inner-block {
     border-top: 0 none;
 }
 .services-steps-inner{
