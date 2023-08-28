@@ -1238,9 +1238,6 @@ ul.footer-links li a:hover {
 .services-content-area p{
     margin: 0;
 }
-.top-border-new{
-    border-top: 1px solid var(--borderColor);
-}
 .no-border-inner-block .testimonial-inner-block {
     border-top: 0 none;
 }
@@ -1333,6 +1330,9 @@ ul.steps-services-list li h5{
 }
 ul.steps-services-list li p{
     margin-bottom: 0;
+}
+.our-story-section-inner{
+    border-top: 1px solid var(--borderColor);
 }
 .book-appointment-content.our-story-content{
     width: 100%;
