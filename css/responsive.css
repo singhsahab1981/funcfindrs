@@ -818,9 +818,6 @@
         background: transparent;
         border-top: 0 none;
     }
-    .feature-grants-inner{
-        border-top: 1px solid var(--borderColor);
-    }
     .casestudy-inner-wrapper{
         flex-direction: column;        
     }
