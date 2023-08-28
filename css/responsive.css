@@ -418,6 +418,10 @@
     .blog-inner-area{
         padding: 30px 20px;
     }
+    .our-propositions-inner{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .proposition-image-part {
         height: 400px;
     }

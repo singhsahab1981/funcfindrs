@@ -587,6 +587,8 @@ header .navbar .logo-image img{
 .our-propositions-inner{
     display: flex;
     align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .proposition-image-part{
