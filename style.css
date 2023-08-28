@@ -862,10 +862,13 @@ ul.services-list-area li a{
 }
 
 .book-appointment-inner{
+    border-top: 1px solid var(--borderColor);
     display: flex;
     align-items: center;
     padding-top: 80px;
     padding-bottom: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .book-appointment-content{
     flex: 0 0 auto;
