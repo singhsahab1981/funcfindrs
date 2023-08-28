@@ -1247,6 +1247,9 @@ ul.footer-links li a:hover {
 .top-border-new{
     border-top: 1px solid var(--borderColor);
 }
+.no-border{
+    border-top: 0 none;
+}
 .services-steps-inner{
     border-top: 1px solid var(--borderColor);
     border-bottom: 1px solid var(--borderColor);
