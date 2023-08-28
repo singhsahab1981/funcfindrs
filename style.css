@@ -573,12 +573,6 @@ header .navbar .logo-image img{
     color: var(--mainTextColor);
 }
 
-.our-propositions-area .grants-services-inner {
-    border-top: 1px solid var(--borderColor);
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
 .secondry-cta-area .inner-container::before,
 .secondry-cta-area .inner-container::after {
     height:300px;
@@ -799,7 +793,6 @@ ul.services-list-area li a{
 }
 .feature-grants-inner{
     background: var(--whiteColor);
-    border-top: 0 none;
 }
 .casestudy-inner-wrapper{
     display: flex;
@@ -1223,6 +1216,7 @@ ul.footer-links li a:hover {
 }
 .services-content-row{
     display: flex;
+    border-top: 1px solid var(--borderColor);
 }
 .services-content-area{
     border-right: 1px solid var(--borderColor);
@@ -1252,7 +1246,6 @@ ul.footer-links li a:hover {
 }
 .services-steps-inner{
     border-top: 1px solid var(--borderColor);
-    border-bottom: 1px solid var(--borderColor);
     display: flex;
 }
 .services-left-steps-area{   

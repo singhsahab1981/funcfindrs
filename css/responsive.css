@@ -425,10 +425,6 @@
     .proposition-image-part {
         height: 400px;
     }
-    .our-propositions-area .grants-services-inner {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
     .small-yellow-dot {
         top: -11px;
     }
@@ -821,6 +817,9 @@
     .home-casestudy-inner{
         background: transparent;
         border-top: 0 none;
+    }
+    .feature-grants-inner{
+        border-top: 1px solid var(--borderColor);
     }
     .casestudy-inner-wrapper{
         flex-direction: column;        
