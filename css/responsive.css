@@ -1,0 +1,1168 @@
+@media (max-width: 1399.98px){
+    :root{
+        --mainfontsize: 18px;
+        --formFieldFont: 16px;
+        --menuFontSize: 18px;
+        --h1FontSize: 48px;
+        --h2FontSize: 40px;
+        --h5FontSize: 18px;
+        --h2SecondFontSize: 34px;
+    }
+    .cta-btn.getstarted-btn .btn-area{
+        width:200px;
+    }
+    .getstarted-btn {
+        margin-left: 50px;
+    }
+    .top-main-banner{
+        height: 690px;
+    }
+    .book-consultation-btn .btn-area{
+        width: 360px;
+    }
+    .proposition-image-part {
+        height: 460px;
+    }
+    .access-box h2{
+        font-size: 80px;
+    }
+    form .form-control{
+        padding: 12px 20px;
+    }
+    .home-small-blog-container + .home-small-blog-container{
+        margin-top: 24px;
+    }
+    .home-large-blog-area{
+        max-width: 100%;
+    }
+    .footer-small-text{
+        max-width:80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .services-content-area{
+        width: 60%;
+    }
+    .services-left-steps-area{  
+        width: 60%;
+    }
+    .services-right-steps-image{  
+        flex: 0 0 auto;
+        width: 40%;
+    }
+    .membership-area-columns .top-plan-info h2{
+        font-size: 32px;
+    }
+    .membership-area-columns .top-plan-info{
+        width: calc(100% - 60px);
+        margin-top: 30px;
+        padding-bottom: 20px;
+        min-height: 195px;
+    }
+    .membership-area-columns ul.plan-full-info li{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .membership-area-columns .bottom-plan-info{
+        width: calc(100% - 60px);
+    }
+    .membership-area-columns .bottom-plan-info.cta-btn .btn-area{
+        font-size: 20px;
+        line-height: 1.2;
+        padding: 15px;
+    }
+    .membership-area-columns{
+        min-width: 320px;
+    }
+    .membership-area-columns .top-plan-info p{
+        max-width:90%;
+    }
+    .member-plans-bottom-info h2{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1199.98px){
+    :root{
+        --mainfontsize: 16px;
+        --menuFontSize: 16px;
+        --h1FontSize: 40px;
+        --h2FontSize: 30px;
+        --h2SecondFontSize: 28px;
+    }
+    .sticket-part{
+        top: 62px;
+    }
+    header .navbar .logo-image img {
+        max-height: 30px;
+    }
+    .getstarted-btn {
+        margin-left: 30px;
+    }
+    .cta-btn.getstarted-btn .btn-area{
+        width:150px;
+        padding: 12px 15px;
+    }
+    .navbar .navbar-nav > li > a{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .top-main-banner{
+        height: 550px;
+    }
+    .heading-text-area{
+        width:40%;
+    }
+    .book-consultation-btn .btn-area{
+        width: 325px;
+    }
+    .book-consultation-btn .btn-area .arrow-btn{
+        width: 46px;
+        height: 46px;
+    }
+    .access-area-inner{
+        justify-content: space-between;
+    }
+    .access-box{
+        margin-right:30px;
+    }
+    .access-box.access-box-03{
+        margin-right: 0;
+    }
+    .access-box h2{
+        font-size: 60px;
+    }
+    ul.services-list-area{
+        justify-content: space-between;
+    }
+    ul.services-list-area li{
+        margin-right: 50px;
+    }
+    ul.services-list-area li:last-child{
+        margin-right: 0;
+    }
+    .testimonial-content-part .testi-content p{
+        min-height: auto;
+    }
+    .casestudy-inner-content{
+        padding: 30px 0;
+    }
+    .casestudy-image-area{
+        height: 480px;
+    }
+    .heading-poligon-icon{
+        width: 50px;
+        height: 45px;
+    }
+    .blog-inner-area span.dingbat{
+        width:25px;
+        height:25px;
+        margin: 0 15px 0 0;
+    }
+    .home-large-blog-area{
+        max-height: 480px;
+    }
+    .home-small-blog-container {
+        height: 225px;
+    }
+    .home-small-blog-content-area{
+        right: 20px;
+    }
+    ul.steps-services-list li{
+        padding-left: 110px;
+        padding-right: 30px;
+    }
+    ul.steps-services-list li + li{
+        padding-top: 50px;
+    }
+    ul.steps-services-list li:before{
+        width:80px;
+        height: 80px;
+        font-size: 28px;
+    }
+    ul.steps-services-list li:after{
+        left: 36px;
+        top: 80px;
+    }
+    ul.steps-services-list li h5 {
+        font-size: 28px;
+    }
+    .membership-area-columns .top-plan-info{
+        min-height: 180px;
+    }
+    .membership-area-columns .bottom-plan-info.cta-btn .btn-area{
+        font-size: 18px;
+    }
+    .member-plans-bottom-info{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 991.98px){  
+    :root{
+        --h1FontSize: 30px;
+        --h2FontSize: 25px;
+        --h2SecondFontSize: 25px;
+        --formFieldFont: 14px;
+        --home-blog-date-author-fontSize: 12px;
+    }
+
+    .inner-container::before{
+        width:20px;
+        left: -20px;
+    }
+    
+    .inner-container::after{
+        width:20px;
+        right: -20px;
+    }
+
+    .inner-container{
+        width: calc(100% - 40px);
+        padding: 0 20px;
+    }
+
+    .mainMenu{
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background: #fff;
+        box-shadow: 5px 0 50px rgba(0,0,0,.10);
+        z-index: 100;
+        width:250px;    
+        overflow: hidden;
+        overflow-y: auto;  
+        transform: translateX(-100%);  
+        transition: all 0.3s ease 0s;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .activeMenu.mainMenu{
+        transform: translateX(20px);
+    }
+    .mainMenu ul{
+        position: static;
+        width: 100%;
+        top:0;
+        left: 0;
+        transform: translateX(0);
+        transition: all 0.3s ease 0s;
+        border-bottom:1px solid var(--borderColor);
+    }
+    header .navbar .logo-image img {
+        height: auto;
+        max-height: 26px;
+    }
+    header .navbar {
+        padding-top: 22px;
+        padding-bottom: 21px;
+    }
+    header .navbar .container-fluid{
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        padding-right: calc(var(--bs-gutter-x) * .5);
+    }
+    .activeSubMenu .mainMenu ul{
+        transform: translateX(-100%);
+    }
+    .navbar .navbar-nav > li {
+        border-top: 1px solid var(--borderColor) !important;
+    }
+    .navbar .navbar-nav > li:first-child > a{
+        padding-left: 20px;
+    }
+    .navbar .navbar-nav > li:last-child > a{
+        padding-right: 20px;
+    }
+    .navbar .navbar-nav > li > a{
+        display: block;
+        padding: 15px 20px;
+    }
+    .navbar .navbar-nav li a:hover{
+        background: var(--yellowColor);
+        color: var(--mainColor);
+    }
+    .navbar .navbar-nav li a.active{
+        background: var(--yellowColor);
+        color: var(--mainColor);
+    }
+    .navbar .close-btn{
+        border:0 none;
+        text-align: left;
+        background: none;
+    }
+    .navbar .close-btn:before{
+        content:"";
+        width: 10px;
+        height: 10px;
+        transition: background-image 0.15s ease-in-out;
+        display: inline-block;
+        vertical-align: middle;
+        border-width: 2px 2px 0 0;
+        border-style: solid;
+        transform: rotate(-139deg);
+        margin-left: 15px;
+        margin-bottom: 10px;
+        margin-top: 7px;
+        margin-right: 15px;
+    }
+    .blank-menu-div.activeMenu{
+        display: block;
+    } 
+    .activeMenu{
+        overflow: hidden;
+    }
+    .mainMenu.activeMenu{
+        overflow-y: auto;
+    }
+    .mainMenu .menu-close-btn{
+        display: block;
+    }
+    .cta-btn.getstarted-btn{
+        width:100%;
+        padding: 20px;
+    }
+    header .navbar .show-for-mobile.logo-image{
+        padding: 25px 0 24px 20px;
+    }
+    .show-for-mobile{
+        display: block !important;
+    }
+    .cta-btn.getstarted-btn .btn-area{
+        width: 100%;
+    }
+    .getstarted-btn{
+        margin-left: 0;
+    } 
+    
+    .sticket-part {
+        top: 66px;
+    }
+
+    .small-yellow-dot-top{
+        width: 20px;
+        height: 20px;
+        right: -10px;
+    }
+
+    h1{
+        margin-bottom: 30px;
+    }
+    h2{
+        margin-bottom: 30px;
+    }
+    .cta-btn .btn-area{
+        padding: 13px 15px;
+    }
+    .book-consultation-btn .btn-area .arrow-btn {
+        width: 35px;
+        height: 35px;
+    }
+    .book-consultation-btn .btn-area .arrow-btn img {
+        max-width: 20px;
+    }
+    .book-consultation-btn .btn-area {
+        width: 100%;
+        max-width: 280px;
+        padding-left: 25px;
+    }
+    .top-banner-area .inner-container{
+        padding: 0;
+    }
+    .top-main-banner{
+        align-items: flex-end;
+    }
+    .top-main-video-outer{
+        width:100%;
+    }
+    .top-banner-image-area{
+        width: 100%;
+    }
+    .heading-text-area{
+        position: static;
+        z-index: 1;
+        padding: 0 0 40px 20px;
+        width: 50%;
+    }
+    .heading-text-area.home-heading-area::before {
+        content: '';
+        position: absolute;
+        background: white;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left:0;
+        clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 0% 100%);
+        z-index: -1;
+    }
+    .small-yellow-dot{
+        width: 20px;
+        height: 20px;
+    }
+    .home-banner-slider .slick-dots{
+        right: 25px;
+        bottom: 5px;
+    }
+    .book-consultation-btn .btn-area{
+        margin-top: 20px;
+    }
+    .secondry-cta-inner{
+        padding: 40px 20px;
+    }
+    .our-services-inner{
+        padding: 40px 20px;
+    }
+    .blog-inner-area{
+        padding: 30px 20px;
+    }
+    .proposition-image-part {
+        height: 400px;
+    }
+    .our-propositions-area .grants-services-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .small-yellow-dot {
+        top: -11px;
+    }
+    .access-box h2 {
+        font-size: 50px;
+    }
+    .access-box.access-box-03{
+        max-width:33%;
+    }
+    .access-area-inner{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .home-casestudy-inner{
+        padding: 0 20px;
+    }
+    .casestudy-inner-content{
+        width: 40%;
+    }
+    ul.services-list-area{
+        margin-top:40px;
+    }
+    .testimonial-content-part .testi-content p{
+        margin-bottom: 30px;
+    }
+    .testimonial-content-part .testi-content{ 
+        background-size: 45px;
+        padding: 15px 15px 0 60px;
+    }
+    .book-appointment-content{
+        width: 50%;
+        padding-right: 30px;
+    }
+    .book-appointment-content .dot-line::before{
+        left: -20px;
+    }
+    .book-appointment-form-area{
+        width: 50%;
+    }
+    .left-line-border{
+        padding-left: 20px;
+    }
+    .appointment-content.left-line-border{
+        padding: 0 20px;
+    }
+    .book-appointment-inner{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .book-appointment-content .dot-line{
+        margin: 30px 0;
+    }
+    .home-blog-area{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .home-small-blog-container{
+        height: 200px;
+    }
+    .home-small-blog-content-area{
+        width: 180px;
+        bottom: 16px;
+    }
+    .large-blog-top-content label.top-label{
+        margin-bottom: 30px;
+    }
+    .large-blog-top-content h5{
+        margin-bottom: 10px;
+    }
+    .newsletter-inner-area{
+        padding: 30px 20px;
+    }
+    .top-footer-section .inner-container::before {
+        height: 410px;
+    }
+    .top-footer-inner{
+        padding: 40px 0 20px;
+    }
+    .top-footer-inner h2{
+        margin-bottom: 10px;
+    }
+    ul.bottom-social-links{
+        margin: 20px 0;
+        align-items: center;
+    }
+    .footer-small-text{
+        margin-top: 40px;
+    }
+    .bottom-footer-inner{
+        padding-top: 15px;
+        padding-bottom: 40px;
+    }
+    .scroll-to-top{
+        width: 30px;
+        right: -10px;
+    }
+    .services-content-area{
+        width: 50%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .services-content-area h2{
+        font-size: 40px;
+    }
+    .services-left-steps-area{  
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 50%;
+    }
+    .services-right-steps-image{ 
+        width: 50%;
+    }
+    ul.steps-services-list li{
+        padding-left: 80px;
+        padding-right: 0;
+    }
+    ul.steps-services-list li + li{
+        padding-top: 40px;
+    }
+    ul.steps-services-list li:before{
+        width:50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    ul.steps-services-list li:after{
+        left: 22px;
+        top: 48px;
+    }
+    ul.steps-services-list li h5 {
+        font-size: 26px;
+    }
+    .book-appointment-content.our-story-content {
+        padding: 40px 100px;
+    }
+    .book-appointment-content.our-story-content .heading-poligon-icon {
+        width: 45px;
+        height: 35px;
+    }
+    .leadership-slide{
+        padding: 40px 20px;
+        width: 220px;
+    }
+    .leadership-slide .slide-img-area {
+        max-width: 180px;
+        max-height: 200px;
+    }
+    .leadership-slide h6{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .leadership-slide p{
+        font-size: 16px;
+        min-height: 48px;
+    }
+    .our-writer-new-inner{
+        margin-top: 40px;
+    }
+    .membership-area-columns .top-plan-info{
+        min-height: 170px;
+    }
+    .membership-area-columns .top-plan-info h2{
+        font-size: 25px;
+    }
+    .membership-plans-section-inner{
+        padding: 0 20px;
+    }
+    .membership-area-columns .bottom-plan-info{
+        padding-bottom: 20px;
+    }
+    .member-plans-bottom-info{
+        padding-bottom: 40px;
+    }
+    .member-top-new-heading {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .member-benifits-inner ul.services-list-area li{
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 767.98px){
+    :root{
+        --mainfontsize: 14px;
+        --mainLineHeight: 1.5;        
+        --h1FontSize: 26px;
+        --h2FontSize: 26px;
+        --h2SecondFontSize: 24px;
+        --formFieldFont: 14px;
+        --formFieldLIneHeight: 1.5;
+        --top-blog-label-fontSize: 12px;
+        --newsletter-font-size: 14px;
+        --newsletter-line-height: 1.4;        
+    }
+
+    .sticket-part {
+        top: 56px;
+    }
+    header .navbar .show-for-mobile.logo-image {
+        padding: 22px 0 22px 20px;
+    }
+    header .navbar .logo-image img {
+        max-height:20px;
+    }
+    .mainMenu .menu-close-btn{
+        top: 12px;
+    }
+    .navbar-toggler{
+        width: 26px;
+        height: 26px;
+    }
+    .navbar-toggler span{
+        width: 13px;
+    }
+    .navbar-toggler span:nth-child(1){
+        transform: translateY(-6px);
+    }
+    .navbar-toggler span:nth-child(3){
+        transform: translateY(6px);
+    }
+    header .navbar {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+    .top-main-banner {
+        height: 500px;
+    }
+    .heading-text-area{
+        width: 100%;
+        max-width:65%;
+        padding-bottom: 30px;
+    }
+    .heading-text-area .book-consultation-btn .btn-area{
+        margin-top: 10px;
+    }
+    .secondry-cta-inner{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .secondry-cta-area p{
+        margin: 0 0 10px;
+    }
+    .cta-btn .btn-area{
+        padding: 10px 15px 11px;
+    }
+    .book-consultation-btn .btn-area .arrow-btn{
+        width:34px;
+        height:34px;
+    }
+    form label.error{
+        bottom: -18px;
+    }
+    .our-propositions-inner{
+        flex-direction: column-reverse;
+        padding-top: 40px;
+    }
+    .proposition-image-part{
+        width: 100%;
+        border: 1px solid var(--borderColor);
+        height: 310px;
+    }
+    .proposition-image-part .small-yellow-dot{
+        left:50%;
+        transform: translateX(-50%);
+        top: -8px;
+    }
+    .propositions-content-area{
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 40px;
+    } 
+    .access-area-inner{
+        padding-top: 30px;
+    }
+    .propositions-access-area .access-box.access-box-03 {
+        display: none !important;
+    }
+    .access-box.access-box-02{
+        margin: 0;
+    }
+    .sticket-part {
+        top: 58px;
+    }
+    .small-yellow-dot-top {
+        width: 15px;
+        height: 15px;
+        right: -8px;
+    }
+    .small-yellow-dot {
+        width: 15px;
+        height: 15px;
+    }
+    .small-yellow-dot {
+        top: -7px;
+    }
+    .home-large-blog-content-area{
+        padding: 20px 19px 14px 20px;
+    }
+    .newsletter-inner-area p{
+        margin-bottom: 8px;
+    }
+    .home-blog-area:first-child{
+        padding-bottom: 24px;
+    }
+    .home-blog-area + .home-blog-area{
+        padding-top: 0;
+    }
+    .home-large-blog-area {
+        max-height: fit-content;
+    }
+    .home-small-blog-container {
+        height: 171px;
+    }
+    .home-small-blog-main-outer{
+        max-width: 100%;
+    }
+    ul.services-list-area{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    ul.services-list-area li{
+        margin-right: 0;
+        margin-top: 25px;
+    }
+    ul.services-list-area li p{
+        max-width: 100%;
+    }
+    ul.services-list-area li span.service-icons img{
+        max-height: 40px;
+    }
+    .testimonial-content-part{
+        width: 100%;
+    }
+    .testimonial-inner-block{
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .testimonial-outer-area .inner-container.zero-pr{
+        padding-right: 20px !important;
+    }
+    .testimonial-image-part{
+        width: 100%;
+    }
+    .testimonial-image-part .slide{
+        text-align: center;
+    }
+    .testimonial-image-part .slide > img{
+        max-width: 348px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    .testimonial-content-part{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .testimonial-content-part .testi-content p{
+        margin-bottom: 20px;
+    }
+    .testimonial-content-part .testi-content h5 {
+        padding-right: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .testimonial-image-part .testi-slider-navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: static;
+        margin-top: 20px;
+    }
+    .testimonial-content-part .testi-slider-navigation{
+        display:none;
+    }
+    .home-casestudy-inner{
+        background: transparent;
+        border-top: 0 none;
+    }
+    .casestudy-inner-wrapper{
+        flex-direction: column;        
+    }
+    .casestudy-image-area::after{
+        display: none;
+    }
+    .casestudy-inner-wrapper .small-yellow-dot {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .casestudy-image-area{
+        width: 100%;
+    }
+    .proposition-image-part .access-box.access-box-03{
+        display: block !important;
+    }
+    .access-box.access-box-03{
+        width: 100%;
+        max-width: 145px;
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        z-index: 1;
+    }
+    .access-box.access-box-03 p{
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: var(--fontBold);
+        color: var(--blackColor);
+    }
+    .access-box.access-box-03 h2{
+        font-size: 75px;
+        line-height: 65px;
+        font-weight: var(--fontBold);
+        color: var(--yellowColor);
+        -webkit-text-stroke: 1px var(--blackColor);
+    }
+    .proposition-image-part .left-line-border{
+        padding-left: 15px;
+        margin-top: 5px;
+    }
+    .proposition-image-part .left-line-border::before {
+        background: var(--blackColor);
+        top: 4px;
+        bottom: 4px;
+        width: 4px;
+    }
+    .proposition-image-part:after{
+        content: '';
+        background-color: var(--yellowColor);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease-in-out;
+        clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    .left-line-border::before {
+        top: 4px;
+        bottom: 4px;
+    }
+    .casestudy-inner-content{
+        width: auto;
+        background: var(--yellowColor);
+        padding: 16px 25px 21px;
+        margin: 0 5%;
+        position: absolute;
+        bottom: 0;
+    }
+    .casestudy-inner-content h2{
+        margin-bottom: 20px;
+    }
+    .casestudy-inner-content h2 span{
+        border-color: var(--borderColor);
+    }
+    .casestudy-inner-content .mobile-content-new {
+        padding-left: 20px;
+        position: relative;
+    }
+    .casestudy-inner-content .mobile-content-new:before{
+        content: '';
+        background: var(--borderColor);
+        left: 0;
+        top: 4px;
+        bottom: 4px;
+        width: 2px;
+        display: block;
+        position: absolute;
+    }
+    .blog-inner-area {
+        padding: 16px 20px;
+    }
+    .blog-inner-area span.dingbat {
+        width: 15px;
+        height: 15px;
+        margin: 0 8px 0 0;
+    }
+    .heading-poligon-icon {
+        width: 36px;
+        height: 31px;
+    }
+    .book-appointment-inner{
+        flex-direction: column;
+    }
+    .book-appointment-content{
+        width: 100%;
+        padding-right: 0;
+    }
+    .book-appointment-heading {
+        margin-bottom: 20px;
+    }
+    .book-appointment-content .dot-line{
+        display: none;
+    }
+    .book-appointment-form-area{
+        width: 100%;
+        margin-top: 30px;
+    }
+    form textarea.form-control {
+        height: 100px;
+    }
+    .book-appointment-inner .cta-btn.book-consultation-btn{
+        justify-content: center;
+    }
+    .cta-btn.book-consultation-btn .btn-area {
+        margin-top: 0;
+        padding-right: 40px;
+    }
+    .secondry-cta-inner{
+        padding: 30px 20px;
+    }
+    form .form-control {
+        padding: 15px 20px;
+    }
+    .footer-small-text{
+        font-size: 12px;
+    }
+    ul.footer-links li, 
+    .bottom-footer-inner p {
+        font-size: 12px;
+    }
+    ul.footer-links li + li{
+        margin-left: 40px;
+    }
+    .services-content-area{
+        width: 100%;
+        border-right: 0 none;
+    }
+    .services-content-area .small-yellow-dot{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .services-content-area h2{
+        font-size: 36px;
+        line-height: 1.4;
+    }
+    .services-steps-inner{
+        flex-direction: column;
+    }
+    .services-left-steps-area{ 
+        width: 100%;
+        border-right: 0 none;
+    }
+    .services-right-steps-image{ 
+        width: 100%;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }    
+    .services-right-steps-image img{
+        width: 350px;
+        min-height: auto;
+        top: auto;
+        transform: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ul.steps-services-list li h5 {
+        font-size: 22px;
+    }
+    .grants-services-inner .proposition-image-part{
+        margin-bottom: 40px;
+    }
+    .grants-services-inner .proposition-image-part:after{
+        display: none; 
+    }
+    .leadership-slide{
+        padding: 20px;
+    }
+    .our-team-inner-area{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .leadership-slider-nav{
+        margin-top:15px;
+        justify-content: center;
+        width:100%;
+    }
+    .book-appointment-content.our-story-content {
+        padding: 40px 50px;
+    }
+    .membership-area-columns {
+        min-width: 250px;
+    }
+    .membership-area-columns .top-plan-info {
+        width: calc(100% - 40px);
+        min-height: 145px;
+    }
+    .membership-area-columns .top-plan-info p {
+        max-width: 100%;
+    }
+    .membership-area-columns .top-plan-info h2 {
+        font-size: 26px;
+    }
+    .membership-area-columns ul.plan-full-info li {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .membership-area-columns .bottom-plan-info {
+        width: calc(100% - 40px);
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+    .membership-area-columns .bottom-plan-info.cta-btn .btn-area {
+        padding: 12px;
+    }
+    .member-plans-bottom-info p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+    .member-benifits-inner ul.services-list-area{
+        padding-top:10px;
+    }
+    .member-benifits-inner ul.services-list-area li::before{
+        width: 100px;
+        height: 100px;
+    }
+    .member-benifits-inner ul.services-list-area li::after{
+        right: 30px;
+        bottom: 30px;
+        font-size: 60px;
+    }
+    .member-benifits-inner ul.services-list-area li{
+        width: 100%;
+    }
+    .member-benifits-inner ul.services-list-area li:nth-of-type(even){
+        border-left: 0 none;
+    }
+    .member-benifits-inner ul.services-list-area li:nth-of-type(5){
+        border-bottom: 0 none;
+    }
+    .member-benifits-inner ul.services-list-area li {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 575.98px){
+    :root{
+        --mainfontsize: 10px;
+        --mainLineHeight: 1.4;        
+        --h1FontSize: 24px;
+        --headingLineHeight: 1.25;
+        --h2FontSize: 24px;
+        --h2SecondFontSize: 22px;
+        --h2SecondLineHeight: 24px;
+        --h5FontSize: 14px;
+        --formFieldFont: 10px;
+        --formFieldLIneHeight: 14px;
+        --blog-readMore-fontSize: 10px;
+        --top-blog-label-fontSize: 10px;
+        --errorFontSize: 10px; 
+        --errorLineHeight: 1.4; 
+        --newsletter-font-size: 10px;         
+        --home-blog-date-author-fontSize: 10px;
+        --home-blog-date-author-lineHeight: 1.4;
+    }
+
+    h1{
+        line-height: var(--headingLineHeight);
+    }
+    h2{
+        line-height: var(--headingLineHeight);
+    }
+    h5{
+        line-height: 1.15;
+    }
+    .cta-btn .btn-area{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .mainMenu .cta-btn .btn-area{
+        font-size: 16px;
+        line-height: normal;
+    }
+    .secondry-cta-area p{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .newsletterForm .newsletter-btn{
+        font-size: 10px;
+    }
+    .newsletter-inner-area p{
+        font-size: 12px;
+    }       
+    .casestudy-image-area{
+        height: 372px;
+    }
+    .top-footer-inner p{
+        font-size: 12px;
+    }
+    .footer-small-text{
+        font-size: 10px;
+    }
+    ul.footer-links li, 
+    .bottom-footer-inner p {
+        font-size: 10px;
+    }
+    .book-appointment-content.our-story-content {
+        padding: 40px 20px;
+    }
+    .membership-area-columns {
+        min-width: 180px;
+    }
+    .membership-area-columns .top-plan-info {
+        min-height: 110px;
+        margin-top: 20px;
+        padding-bottom: 15px;
+    }
+    .membership-area-columns .top-plan-info h2 {
+        font-size: 24px;
+    }
+    .membership-area-columns .bottom-plan-info.cta-btn .btn-area {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 10px;
+    }
+    .member-plans-bottom-info h2 {
+        font-size: 22px;
+    }
+    .member-plans-bottom-info p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 375.98px){
+    .access-box h2{
+        font-size: 40px;
+    } 
+    ul.footer-links li + li {
+        margin-left: 15px;
+    }
+}
