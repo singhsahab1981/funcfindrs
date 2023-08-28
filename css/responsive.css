@@ -614,6 +614,9 @@
     .member-benifits-inner ul.services-list-area li{
         padding: 30px 20px;
     }
+    .testimonial-inner-block{
+        padding-left: 20px;
+    }
 }
 
 @media (max-width: 767.98px){
@@ -775,6 +778,7 @@
         flex-direction: column;
         padding-top: 40px;
         padding-bottom: 40px;
+        padding-right: 20px;
     }
     .testimonial-outer-area .inner-container.zero-pr{
         padding-right: 20px !important;

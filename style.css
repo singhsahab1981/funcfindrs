@@ -667,7 +667,6 @@ header .navbar .logo-image img{
 
 .our-services-inner{
     border-top: 1px solid var(--borderColor);
-    border-bottom: 1px solid var(--borderColor);
     background: var(--servicesBackgroundColor);
     padding: 100px 40px;
 }
@@ -717,7 +716,7 @@ ul.services-list-area li a{
 
 .testimonial-inner-block{
     border-top: 1px solid var(--borderColor);
-    padding-right: 40px;
+    padding-left: 40px;
     display:flex;
     align-items: center;
 }
