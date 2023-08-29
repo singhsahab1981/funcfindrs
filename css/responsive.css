@@ -82,6 +82,24 @@
     .member-plans-bottom-info h2{
         font-size: 24px;
     }
+    ul.address-area-list li,
+    ul.address-area-list li p {
+        font-size: 20px;
+    }
+    ul.address-area-list li h2 {
+        font-size: 28px;
+    }
+    .blog-detail-page-inner p, .blog-detail-page-inner ul li {
+        font-size: 18px;
+        line-height: 2.5;
+    }
+    .blog-detail-page-inner p strong, .blog-detail-page-inner ul li strong {
+        font-size: 22px;
+    }
+    .blog-detail-page-inner h2{
+        font-size: 28px;
+        line-height: 1.5;
+    }
 }
 
 @media (max-width: 1199.98px){
@@ -197,6 +215,44 @@
     }
     .member-plans-bottom-info{
         width: 100%;
+    }
+    .blog-hero-banner-inner {
+        height: 480px;
+    }
+    .blog-hero-banner-content-area {
+        bottom: 20px;
+        right: 20px;
+        max-width: 350px;
+    }
+    .blog-list-main{
+        height: 480px;
+    }
+    ul.blog-listing-list li{
+        width: 50%;
+    }
+    .left-filter-form-area .form-control{
+        padding: 12px 30px 12px 20px;
+    }
+    .left-filter-form-area .btn-area{
+        padding: 12px 25px;
+    }
+    .blog-listing-pagination li{
+        width: 50px;
+        height: 50px;
+    }
+    .blog-listing-pagination li img{
+        max-width: 15px;
+    }
+    .text-image-block img{
+        max-width: 50%;
+    }
+    .blog-author-img {
+        max-width: 60px;
+        min-width: 60px;
+        height: 60px;
+    }
+    .blog-author-details {
+        margin-left: 22px;
     }
 }
 
@@ -353,6 +409,9 @@
     }
     h2{
         margin-bottom: 30px;
+    }
+    .pb-60{
+        padding-bottom: 40px;
     }
     .cta-btn .btn-area{
         padding: 13px 15px;
@@ -569,6 +628,10 @@
         width: 45px;
         height: 35px;
     }
+    .contact-us-form-area .book-appointment-content .heading-poligon-icon{
+        width: 45px;
+        height: 35px;
+    }
     .leadership-slide{
         padding: 40px 20px;
         width: 220px;
@@ -612,6 +675,92 @@
     }
     .testimonial-inner-block{
         padding-left: 20px;
+    }
+    .blog-hero-banner-inner {
+        height: 400px;
+    }
+    .blog-hero-banner-content-area {
+        max-width: 260px;
+    }
+    .blog-main-listing-inner-wrapper{
+        padding-bottom: 40px;
+    }
+    .blog-main-listing-inner-wrapper.related-blogs-inner-area{
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .blog-listing-content .blog-name-date-area h6{
+        font-size: 14px;
+    }
+    .blog-listing-content h2{
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+    .blog-listing-content p{
+        margin-bottom: 10px;
+    }
+    .blog-list-main{
+        height: 400px;
+    }
+    .blog-hero-inner-wrapper{
+        padding-top: 40px;
+    }
+    ul.blog-listing-list li{
+        margin-top: 40px;
+    }
+    .filter-area-inner{
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .left-filter-form-area .btn-area{
+        min-width: 100px;
+    }
+    .blog-listing-pagination{
+        margin-top: 40px;
+    }
+    .contact-us-form-area .book-appointment-content{
+        margin-bottom: 30px;
+    }
+    .formField .form-check .form-check-input{
+        margin-top: 7px;
+    }
+    .contact-address-area{
+        width: 50%;
+        padding-left: 20px;
+    }
+    .contact-us-form-area.book-appointment-form-area{
+        padding-right: 20px;
+    }
+    ul.address-area-list li{
+        margin-top: 40px;
+    }
+    ul.address-area-list li,
+    ul.address-area-list li p {
+        font-size: 18px;
+    }
+    ul.address-area-list li h2 {
+        font-size: 22px;
+    }
+    .blog-detail-page-inner{
+        padding-top: 40px;
+        padding-bottom: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .blog-detail-page-inner p, .blog-detail-page-inner ul li {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    .blog-author-details span.blog-date-info{
+        font-size: 14px;
+    }
+    .blog-detail-page-inner h2 {
+        font-size: 24px;
+    }
+    .blog-detail-page-inner p strong, .blog-detail-page-inner ul li strong {
+        font-size: 18px;
     }
 }
 
@@ -1074,6 +1223,104 @@
     .member-benifits-inner ul.services-list-area li {
         padding: 25px 20px;
     }
+    .blog-hero-banner-image-area::after {
+        display: none;
+    }
+    .blog-hero-banner-content-area {
+        width: auto;
+        background: var(--yellowColor);
+        padding: 16px 25px 21px;
+        margin: 0 5%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 100%;
+    }
+    .blog-listing-content h2 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .blog-listing-content .blog-name-date-area p{
+        font-size: 10px;
+    }
+    .blog-listing-content p{
+        font-size: 10px;
+        line-height: 1.4;
+    }
+    .blog-listing-content h2 a:hover{
+        color: var(--mainColor);
+    }
+    ul.blog-listing-list li{
+        width: 100%;
+    }
+    .blog-list-main{
+        width: 100%;
+    }
+    .blog-list-image-area:after{
+        display: none;
+    }
+    .blog-list-content-area {
+        width: auto;
+        background: var(--yellowColor);
+        padding: 16px 25px 21px;
+        margin: 0 5%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top:auto;
+        left:auto;
+        max-width: 100%;
+    }
+    .blog-list-content-area.blog-listing-content p {
+        max-width: 100%;
+    }
+    .filter-main-block{
+        flex-direction: column;
+    }
+    .left-filter-form-area{
+        max-width: 100%;
+        margin-right: 0;
+        width: 100%;
+    }
+    .total-result-count-area{
+        margin-top: 20px;
+    }
+    .contact-address-area {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .contact-us-form-area.book-appointment-form-area{
+        padding-right: 0;
+    }
+    .blog-detail-page-inner p, .blog-detail-page-inner ul li {
+        font-size: 14px;
+    }
+    .blog-author-details span.blog-date-info{
+        font-size: 12px;
+    }
+    .blog-detail-page-inner h2 {
+        font-size: 22px;
+    }
+    .blog-detail-page-inner p strong, .blog-detail-page-inner ul li strong {
+        font-size: 16px;
+    }
+    .text-image-block{
+        flex-direction: column;
+    }
+    .text-block-content{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .blog-author-img {
+        max-width: 50px;
+        min-width: 50px;
+        height: 50px;
+    }
+    .blog-author-details {
+        margin-left: 20px;
+    }
 }
 
 @media (max-width: 575.98px){
@@ -1162,6 +1409,43 @@
     .member-plans-bottom-info p {
         font-size: 10px;
     }
+    .blog-hero-banner-inner {
+        height: 350px;
+    }
+    .blog-list-main{
+        height: 350px;
+    }
+    .left-filter-form-area{
+        max-width: 100%;
+        margin-right: 0;
+        width: 100%;
+    }
+    .left-filter-form-area .filterForm{
+        flex-direction: column;
+    }
+    .left-filter-form-area .filterForm .textfield{
+        margin-right: 0;
+    }
+    .left-filter-form-area .form-control{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .left-filter-form-area .filterForm label.error{
+        bottom: 3px;
+    }
+    .blog-listing-pagination li {
+        width: 30px;
+        height: 30px;
+    }
+    .blog-listing-pagination li + li {
+        margin-left: 15px;
+    }
+    .blog-listing-pagination li img {
+        max-width: 10px;
+    }
+    .formField .form-check .form-check-input{
+        margin-top: 3px;
+    }
 }
 
 @media (max-width: 375.98px){
@@ -1170,5 +1454,8 @@
     } 
     ul.footer-links li + li {
         margin-left: 15px;
+    }
+    .book-consultation-btn .btn-area{
+        max-width: 100%;
     }
 }

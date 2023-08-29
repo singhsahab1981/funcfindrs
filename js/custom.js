@@ -114,6 +114,34 @@ if($('#appointment-form').length){
   });
 }
 
+if($('#contact-form').length){
+  $("#contact-form").validate({
+    rules: {
+        yname: "required",
+        email: {
+            required: true,
+            email: true
+        },
+        phone: "required",
+        businessinfo: "required",
+        terms: "required"
+    },
+    messages: {
+        yname: "Please enter your full name",
+        email: "Please enter your valid email address",
+        phone: "Please enter your mobile",
+        businessinfo: "Please let us know about you and your business",
+        terms: "Please accept our tems and conditions"
+    },
+    onfocusout: function(element) {
+      return $(element).valid();
+    },
+    submitHandler: function(form) {
+                    
+      }
+  });
+}
+
 if($('#newsletterForm').length){
   $("#newsletterForm").validate({
     rules: {
@@ -188,4 +216,24 @@ for (let i = 1; i <= slickSlide.length; i++) {
     $('.home-banner-slider').slick('slickPlay');
   });
   
+}
+
+if($('#searchForm').length){
+  $("#searchForm").validate({
+    rules: {
+      searchText: {
+        required: true,
+        minlength: 3
+      }
+    },
+    messages: {
+      searchText: {
+        required: "Please enter something search box",
+        minlength: "Please enter at least 3 characters"
+      }
+    },
+    onfocusout: function(element) {
+      return $(element).valid();
+    }
+});
 }
