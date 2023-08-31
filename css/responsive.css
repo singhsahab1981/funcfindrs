@@ -100,6 +100,17 @@
         font-size: 28px;
         line-height: 1.5;
     }
+    ul.services-list-area li{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .access-area-inner .access-box {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .access-box.access-box-03{
+        max-width: 330px;
+    }
 }
 
 @media (max-width: 1199.98px){
@@ -128,7 +139,7 @@
         padding-right: 20px;
     }
     .top-main-banner{
-        height: 550px;
+        height: 570px;
     }
     .heading-text-area{
         width:40%;
@@ -140,32 +151,22 @@
         width: 46px;
         height: 46px;
     }
-    .access-area-inner{
-        justify-content: space-between;
-    }
-    .access-box{
-        margin-right:30px;
+    .access-area-inner .access-box {
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .access-box.access-box-03{
-        margin-right: 0;
+        max-width: 260px;
     }
     .access-box h2{
         font-size: 60px;
     }
-    ul.services-list-area{
-        justify-content: space-between;
-    }
     ul.services-list-area li{
-        margin-right: 50px;
-    }
-    ul.services-list-area li:last-child{
-        margin-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .testimonial-content-part .testi-content p{
         min-height: auto;
-    }
-    .casestudy-inner-content{
-        padding: 30px 0;
     }
     .casestudy-image-area{
         height: 480px;
@@ -173,11 +174,6 @@
     .heading-poligon-icon{
         width: 50px;
         height: 45px;
-    }
-    .blog-inner-area span.dingbat{
-        width:25px;
-        height:25px;
-        margin: 0 15px 0 0;
     }
     .home-large-blog-area{
         max-height: 480px;
@@ -481,17 +477,19 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    .proposition-image-part {
-        height: 400px;
-    }
     .small-yellow-dot {
         top: -11px;
+    }
+    .access-area-inner .access-box{
+        width: auto;
+        padding-left: 12px;
+        padding-right: 12px;
     }
     .access-box h2 {
         font-size: 50px;
     }
     .access-box.access-box-03{
-        max-width:33%;
+        max-width: 240px;
     }
     .access-area-inner{
         padding-top: 40px;
@@ -559,7 +557,7 @@
         padding: 30px 20px;
     }
     .top-footer-section .inner-container::before {
-        height: 410px;
+        height: 300px;
     }
     .top-footer-inner{
         padding: 40px 0 20px;
@@ -568,7 +566,7 @@
         margin-bottom: 10px;
     }
     ul.bottom-social-links{
-        margin: 20px 0;
+        margin: 0 0 20px;
         align-items: center;
     }
     .footer-small-text{
@@ -580,7 +578,12 @@
     }
     .scroll-to-top{
         width: 30px;
-        right: -10px;
+        right: -10px; 
+    }
+    ul.services-list-area li{
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 33.3333%;
     }
     .services-content-area{
         width: 50%;
@@ -745,11 +748,15 @@
     }
     .blog-detail-page-inner{
         padding-top: 40px;
-        padding-bottom: 0;
+        padding-bottom: 40px;
         padding-left: 20px;
         padding-right: 20px;
     }
-    .blog-detail-page-inner p, .blog-detail-page-inner ul li {
+    .blog-detail-page-inner p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    .blog-detail-page-inner ul li{
         font-size: 16px;
         line-height: 1.8;
     }
@@ -761,6 +768,23 @@
     }
     .blog-detail-page-inner p strong, .blog-detail-page-inner ul li strong {
         font-size: 18px;
+    }
+    .blog-detail-page-inner .wp-block-columns{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .blog-detail-page-inner .wp-block-columns .wp-block-column{
+        margin-right: 0;
+    }
+    .blog-detail-page-inner .wp-block-columns .wp-block-column+.wp-block-column{
+        padding-top: 40px;
+    }
+    .blog-detail-page-inner .wp-block-columns .wp-block-column .wp-block-image,
+    .blog-detail-page-inner .wp-block-columns .wp-block-column+.wp-block-column .wp-block-image {
+        text-align: center;
+    }
+    .blog-detail-page-inner > .wp-block-image{
+        padding: 40px 0;
     }
 }
 
@@ -855,6 +879,7 @@
     .propositions-content-area{
         width: 100%;
         padding-left: 0;
+        padding-top: 0;
         padding-bottom: 40px;
     } 
     .access-area-inner{
@@ -863,8 +888,9 @@
     .propositions-access-area .access-box.access-box-03 {
         display: none !important;
     }
-    .access-box.access-box-02{
-        margin: 0;
+    .access-area-inner .access-box {
+        padding-left: 0;
+        padding-right: 0;
     }
     .sticket-part {
         top: 58px;
@@ -909,9 +935,15 @@
     ul.services-list-area li{
         margin-right: 0;
         margin-top: 25px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
     }
-    ul.services-list-area li p{
-        max-width: 100%;
+    ul.services-list-area li+li{
+        margin-top: 37px;
+    }
+    ul.services-list-area li span.service-icons{
+        margin-bottom: 15px;
     }
     ul.services-list-area li span.service-icons img{
         max-height: 40px;
@@ -1060,11 +1092,6 @@
     .blog-inner-area {
         padding: 16px 20px;
     }
-    .blog-inner-area span.dingbat {
-        width: 15px;
-        height: 15px;
-        margin: 0 8px 0 0;
-    }
     .heading-poligon-icon {
         width: 36px;
         height: 31px;
@@ -1073,7 +1100,7 @@
         flex-direction: column;
     }
     .book-appointment-content{
-        width: 100%;
+        width: 100%; 
         padding-right: 0;
     }
     .book-appointment-heading {
@@ -1114,7 +1141,6 @@
     }
     .services-content-area{
         width: 100%;
-        border-right: 0 none;
     }
     .services-content-area .small-yellow-dot{
         left: 50%;
@@ -1271,6 +1297,12 @@
         top:auto;
         left:auto;
         max-width: 100%;
+    }
+    .blog-list-content-area h1 span,
+    .blog-list-content-area h2 span,
+    .blog-hero-banner-content-area h1 span,
+    .blog-hero-banner-content-area h2 span {
+        border-color: var(--blackColor);
     }
     .blog-list-content-area.blog-listing-content p {
         max-width: 100%;

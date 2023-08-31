@@ -1,4 +1,73 @@
-:root{
+/*!
+Theme Name: fundfinders
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: fundfinders
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+fundfinders is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+ 
+ :root{
     --fontfamily: 'Source Sans Pro';
     --mainfontsize: 20px;
     --mainLineHeight: 1.7;
@@ -66,7 +135,7 @@ body{
 }
 
 .top-footer-section .inner-container:before{
-    height:550px;
+    height:360px;
 }
 header .inner-container:before{
     height: 150px;
@@ -543,6 +612,8 @@ header .navbar .logo-image img{
     flex: 0 0 auto;
     width:50%;
     max-width:500px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .heading-image-area{
     flex: 0 0 auto;
@@ -638,6 +709,8 @@ header .navbar .logo-image img{
     width: 50%;
     max-width: 100%;
     padding-left:62px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .our-propositions-area p{
@@ -662,10 +735,15 @@ header .navbar .logo-image img{
 
 .access-area-inner{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     padding-top:100px;
     padding-bottom: 80px;
+}
+
+.access-area-inner .access-box{
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .access-box{
@@ -674,7 +752,7 @@ header .navbar .logo-image img{
 }
 
 .access-box.access-box-03{
-    max-width:265px;
+    max-width: 390px;
 }
 
 .access-box p{
@@ -705,17 +783,19 @@ header .navbar .logo-image img{
 }
 ul.services-list-area{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     margin-top:70px;
 }
 ul.services-list-area li{
     color: var(--servicesTextColor);
     position: relative;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 ul.services-list-area li span.service-icons{
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 ul.services-list-area li span.service-icons img{
     max-height: 80px;
@@ -731,7 +811,6 @@ ul.services-list-area li h5 a{
 ul.services-list-area li p{
     color: var(--servicesTextColor);
     margin:0;
-    max-width:299px;
 }
 ul.services-list-area li a{
     color: var(--blackColor);
@@ -752,6 +831,15 @@ ul.services-list-area li a{
     position: relative;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.testi-image-slider,
+.testi-image-slider .slick-list,
+.testi-image-slider .slick-list .slick-track,
+.testi-image-slider .slick-list .slick-track .slide {
+    display:flex;
+}
+.testi-image-slider{
+    justify-content: center;
 }
 .testimonial-image-part{
     flex: 0 0 auto;
@@ -884,12 +972,11 @@ ul.services-list-area li a{
     max-width:100%;
     z-index: 1;
     margin-left: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .casestudy-inner-content .mobile-content-new p:last-child{
     margin: 0;
-}
-
-.book-appointment-outer .inner-container{
 }
 
 .book-appointment-inner{
@@ -966,14 +1053,6 @@ ul.services-list-area li a{
     padding: 32px 40px;
     display:flex;
     align-items: center;
-}
-.blog-inner-area span.dingbat{
-    width:30px;
-    height:30px;
-    margin: 0 25px 0 0;
-    background-color: var(--whiteColor);
-    border-color: var(--whiteColor);
-    border-radius: 0;
 }
 .blog-inner-area h2{
     margin:0;
@@ -1202,7 +1281,7 @@ ul.services-list-area li a{
 }
 ul.bottom-social-links{
     display:flex;
-    margin: 30px 0;
+    margin: 0 0 30px;
     justify-content: center;
 }
 ul.bottom-social-links li+li{
@@ -1257,7 +1336,6 @@ ul.footer-links li a:hover {
     border-top: 1px solid var(--borderColor);
 }
 .services-content-area{
-    border-right: 1px solid var(--borderColor);
     padding-top: 102px;
     padding-bottom: 90px;
     padding-left: 40px;
@@ -1385,10 +1463,6 @@ ul.steps-services-list li p{
 }
 .team-slider-main-outer{
     border-bottom: 1px solid var(--borderColor);
-}
-.leader-team-heading{
-    display: flex;
-    align-items: center;
 }
 .leadership-slide{
     padding: 60px 22px;
@@ -1965,7 +2039,7 @@ ul.address-area-list li a:hover{
 .blog-detail-page-inner{
     border-top: 1px solid var(--borderColor);
     padding-top: 100px;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -1979,7 +2053,11 @@ ul.address-area-list li a:hover{
     margin-bottom: 15px;
     color: var(--blackColor);
 }
-.blog-detail-page-inner p,
+.blog-detail-page-inner p {
+    font-size: 22px;
+    line-height: 54px;
+    margin: 0;
+}
 .blog-detail-page-inner ul li {
     font-size: 22px;
     line-height: 54px;
@@ -2012,6 +2090,9 @@ ul.address-area-list li a:hover{
 .blog-author-info{
     display:flex;
 }
+.blog-detail-page-inner .blog-author-info p{
+    padding-bottom: 0;
+}
 .blog-author-img{
     max-width: 74px;
     min-width: 74px;
@@ -2038,4 +2119,50 @@ ul.address-area-list li a:hover{
 }
 .blog-detail-page-inner ul li{
     list-style: disc;
+}
+.blog-detail-page-inner .wp-block-columns{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.blog-detail-page-inner .wp-block-columns .wp-block-column{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 50px;
+}
+.blog-detail-page-inner .wp-block-columns .wp-block-column p{
+    padding: 0;
+}
+.blog-detail-page-inner .wp-block-columns .wp-block-column+.wp-block-column{
+    margin-right: 0;
+}
+.blog-detail-page-inner .wp-block-columns .wp-block-column+.wp-block-column .wp-block-image {
+    text-align: right;
+    margin: 0;
+}
+.blog-detail-page-inner > .wp-block-image{
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.intercom-lightweight-app .intercom-lightweight-app-launcher{
+    max-width: 56px;
+    width: 56px;
+    max-height: 56px;
+    height: 56px;
+    background-color: var(--yellowColor);
+}
+.intercom-lightweight-app .intercom-lightweight-app-launcher .intercom-lightweight-app-launcher-icon{
+    width: 56px;
+    height: 56px;
+}
+.intercom-launcher.intercom-launcher-active{
+    height: 56px;
+    width: 56px;
+    background-color: var(--yellowColor);
+}
+iframe.intercom-launcher-frame .intercom-9wfpno{
+    height: 56px;
+    width: 56px;
+    background-color: var(--yellowColor);
 }
