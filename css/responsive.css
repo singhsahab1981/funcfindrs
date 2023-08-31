@@ -260,6 +260,9 @@
     .blog-listing-content p{
         font-size: 12px;
     }
+    .reverse-proposition-section.our-propositions-inner .propositions-content-area{
+        padding-right: 100px;
+    }
 }
 
 
@@ -801,6 +804,14 @@
     }
     .progress-bar{
         width: 20px;
+    }
+    .reverse-proposition-section.our-propositions-inner .propositions-content-area {
+        padding-right: 62px;
+        width: 50%;
+    }
+    .reverse-proposition-section.our-propositions-inner .proposition-image-part {
+        width: 50%;
+        min-height: 800px;
     }
 }
 
@@ -1372,6 +1383,21 @@
     }
     .blog-author-details {
         margin-left: 20px;
+    }
+    .reverse-proposition-section.our-propositions-inner{
+        padding-right: 20px;
+        flex-direction: column-reverse;
+    }
+    .reverse-proposition-section.our-propositions-inner .propositions-content-area {
+        padding-right: 0;
+        width: 100%;
+    }
+    .reverse-proposition-section.our-propositions-inner .proposition-image-part {
+        width: 100%;
+        min-height: auto;
+    }
+    .propositions-content-area .secondry-cta-btn {
+        margin-top: 30px;
     }
 }
 

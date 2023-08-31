@@ -2180,3 +2180,18 @@ ul.address-area-list li a:hover{
 .propositions-content-area .secondry-cta-btn{
     margin-top: 50px;
 }
+
+.reverse-proposition-section.our-propositions-inner{
+    flex-direction: row-reverse;
+    padding-right: 0;
+    background: var(--servicesBackgroundColor);
+}
+.reverse-proposition-section.our-propositions-inner .propositions-content-area {
+    padding-left: 0;
+    padding-right: 157px;
+    width: 60%;
+}
+.reverse-proposition-section.our-propositions-inner .proposition-image-part {
+    width: 40%;
+    min-height: 840px;
+}
