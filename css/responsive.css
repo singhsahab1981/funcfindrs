@@ -21,7 +21,7 @@
         width: 360px;
     }
     .proposition-image-part {
-        height: 460px;
+        min-height: 460px;
     }
     .access-box h2{
         font-size: 80px;
@@ -110,6 +110,9 @@
     }
     .access-box.access-box-03{
         max-width: 330px;
+    }
+    .leadership-slide{
+        width: 280px;
     }
 }
 
@@ -223,7 +226,8 @@
     .blog-list-main{
         height: 480px;
     }
-    ul.blog-listing-list li{
+    ul.blog-listing-list li,
+    .related-blogs-inner-area ul.blog-listing-list li {
         width: 50%;
     }
     .left-filter-form-area .form-control{
@@ -249,6 +253,12 @@
     }
     .blog-author-details {
         margin-left: 22px;
+    }
+    .blog-list-content-area{
+        max-width: 220px;
+    }
+    .blog-listing-content p{
+        font-size: 12px;
     }
 }
 
@@ -786,6 +796,12 @@
     .blog-detail-page-inner > .wp-block-image{
         padding: 40px 0;
     }
+    .blog-list-content-area{
+        max-width: 200px;
+    }
+    .progress-bar{
+        width: 20px;
+    }
 }
 
 @media (max-width: 767.98px){
@@ -869,11 +885,10 @@
     .proposition-image-part{
         width: 100%;
         border: 1px solid var(--borderColor);
-        height: 310px;
+        height: 350px;
+        min-height: auto;
     }
-    .proposition-image-part .small-yellow-dot{
-        left:50%;
-        transform: translateX(-50%);
+    .our-propositions-inner .small-yellow-dot{        
         top: -8px;
     }
     .propositions-content-area{
@@ -1270,14 +1285,16 @@
     .blog-listing-content .blog-name-date-area p{
         font-size: 10px;
     }
-    .blog-listing-content p{
+    .blog-listing-content p,
+    .related-blogs-inner-area .blog-listing-content p {
         font-size: 10px;
         line-height: 1.4;
     }
     .blog-listing-content h2 a:hover{
         color: var(--mainColor);
     }
-    ul.blog-listing-list li{
+    ul.blog-listing-list li,
+    .related-blogs-inner-area ul.blog-listing-list li {
         width: 100%;
     }
     .blog-list-main{
@@ -1297,6 +1314,9 @@
         top:auto;
         left:auto;
         max-width: 100%;
+    }
+    .related-blogs-inner-area .blog-list-content-area {
+        width: auto;
     }
     .blog-list-content-area h1 span,
     .blog-list-content-area h2 span,
@@ -1489,5 +1509,9 @@
     }
     .book-consultation-btn .btn-area{
         max-width: 100%;
+    }
+    .access-box.access-box-03 {
+        bottom: 15px;
+        right: 10px;
     }
 }

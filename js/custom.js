@@ -1,3 +1,10 @@
+$(document).on("scroll", function(){
+  var pixels = $(document).scrollTop();
+  var pageHeight = $(document).height() - $(window).height();
+  var progress = 100 * pixels / pageHeight;  
+  $("div.progress-bar").css("height", progress + "%");
+});
+
 var amountScrolled = 500;
 $(window).scroll(function() {
   if ( $(window).scrollTop() > amountScrolled ) {
@@ -30,18 +37,10 @@ if($('.testi-image-slider').length){
 $('.testi-image-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
-  asNavFor: '.testi-text-slider',
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: true,
-        prevArrow: $('.testiPrev'),
-        nextArrow: $('.testiNext'),
-      }
-    }
-  ]
+  arrows: true,
+  prevArrow: $('.testiPrev'),
+  nextArrow: $('.testiNext'),
+  asNavFor: '.testi-text-slider'
 });
 }
 
@@ -51,38 +50,67 @@ $('.testi-text-slider').slick({
   slidesToScroll: 1,
   asNavFor: '.testi-image-slider',
   focusOnSelect: true, 
+  arrows: true,
   prevArrow: $('.testiPrev'),
-  nextArrow: $('.testiNext'),
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false
-      }
-    }
-  ]
+  nextArrow: $('.testiNext')
 });
 }
 
 if($('.leadership-slider').length){
 $('.leadership-slider').slick({
   infinite: true,
-  slidesToShow: 1,
-  centerMode: true,
+  slidesToShow: 4,
+  centerMode: false,
   variableWidth: true,  
   prevArrow: $('.leaderPrev'),
   nextArrow: $('.leaderNext'),
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        centerMode: false,
+        slidesToShow: 3,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        centerMode: true,
+        slidesToShow: 1,
+        infinite: true,
+      }
+    }
+  ]
 });
 }
 
 if($('.writer-slider').length){
 $('.writer-slider').slick({
   infinite: true,
-  slidesToShow: 1,
-  centerMode: true,
+  slidesToShow: 4,
+  centerMode: false,
   variableWidth: true,  
   prevArrow: $('.writerPrev'),
   nextArrow: $('.writerNext'),
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        centerMode: false,
+        slidesToShow: 3,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        centerMode: true,
+        slidesToShow: 1,
+        infinite: true,
+      }
+    }
+  ]
 });
 }
 
