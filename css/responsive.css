@@ -263,6 +263,15 @@
     .reverse-proposition-section.our-propositions-inner .propositions-content-area{
         padding-right: 100px;
     }
+    .other-services-content-area{
+        padding: 25px;
+    }
+    .other-services-content-area h2{
+        font-size: 24px;
+    }
+    .other-services-inner{
+        padding-top: 20px;
+    }
 }
 
 
@@ -812,6 +821,25 @@
     .reverse-proposition-section.our-propositions-inner .proposition-image-part {
         width: 50%;
         min-height: 800px;
+    }
+    .last-wireframe-inner {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    ul.other-services-list{
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    ul.other-services-list li{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
+    .other-services-content-area h2{
+        font-size: 20px;
+    }
+    .other-service-learn-more{
+        margin-top: 20px;
     }
 }
 
@@ -1399,6 +1427,23 @@
     .propositions-content-area .secondry-cta-btn {
         margin-top: 30px;
     }
+    .last-wireframe-row {
+        align-items: flex-end;
+        flex-direction: column-reverse;
+    }
+    .last-wireframe-col2 {
+        display: flex;
+        justify-content: flex-start;
+    }
+    ul.other-services-list li{
+        width: 100%;
+    }
+    .other-services-content-area{
+        padding: 20px 25px;
+    }
+    .other-services-inner{
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 575.98px){
@@ -1523,6 +1568,9 @@
     }
     .formField .form-check .form-check-input{
         margin-top: 3px;
+    }
+    .other-service-learn-more{
+        font-size: 12px;
     }
 }
 
