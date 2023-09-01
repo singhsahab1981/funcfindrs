@@ -14,6 +14,42 @@ $(window).scroll(function() {
   }
 });
 
+if($('.faq-main-section').length){
+  $('.faq-question-area').click(function(e) {
+    e.preventDefault();
+    let $this = $(this);
+    if ($this.next().hasClass('showAnswer')) {
+        $this.next().removeClass('showAnswer');
+        $this.parent().parent().find('.plus-minus-sign').removeClass('showMinus');
+        $this.next().slideUp(350);
+    } else {
+        $this.parents().find('li .faq-list-cover .faq-answer-area').removeClass('showAnswer');
+        $this.parents().find('li .faq-list-cover .plus-minus-sign').removeClass('showMinus');
+        $this.parents().find('li .faq-list-cover .faq-answer-area').slideUp(350);
+        $this.next().toggleClass('showAnswer');
+        $this.parent().parent().find('.plus-minus-sign').toggleClass('showMinus');
+        $this.next().slideToggle(350);
+    }
+  });
+  
+  $('.plus-minus-sign').click(function(e) {
+    e.preventDefault();
+    let $this = $(this);
+    if ($this.hasClass('showMinus')) {
+        $this.removeClass('showMinus');
+        $this.parent().find('.faq-answer-area').removeClass('showAnswer');
+        $this.parent().find('.faq-answer-area').slideUp(350);
+    } else {
+        $this.parents().find('li .faq-list-cover .faq-answer-area').removeClass('showAnswer');
+        $this.parents().find('li .faq-list-cover .plus-minus-sign').removeClass('showMinus');
+        $this.parents().find('li .faq-list-cover .faq-answer-area').slideUp(350);
+        $this.toggleClass('showMinus');
+        $this.parent().find('.faq-answer-area').toggleClass('showAnswer');
+        $this.parent().find('.faq-answer-area').slideToggle(350);
+    }
+  });
+  }
+
 $('.menuToggler').click(function(){
   $('#mainMenu, body, html').addClass('activeMenu');
   $('.blank-menu-div').addClass('activeMenu');
@@ -151,15 +187,13 @@ if($('#contact-form').length){
             email: true
         },
         phone: "required",
-        businessinfo: "required",
-        terms: "required"
+        businessinfo: "required"
     },
     messages: {
         yname: "Please enter your full name",
         email: "Please enter your valid email address",
         phone: "Please enter your mobile",
-        businessinfo: "Please let us know about you and your business",
-        terms: "Please accept our tems and conditions"
+        businessinfo: "Please let us know about you and your business"
     },
     onfocusout: function(element) {
       return $(element).valid();

@@ -149,8 +149,13 @@ h1{
     color: var(--mainTextColor);
     font-size: var(--h1FontSize);
     line-height: var(--normalLineHeight);
-    margin-bottom:50px;
+    margin-bottom: 25px;
+    font-weight: var(--fontNormal);
+}
+
+.home-banner-slider h1{
     font-weight: var(--fontBold);
+    margin-bottom: 50px;
 }
 
 h2{
@@ -843,10 +848,7 @@ ul.services-list-area li a{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.testi-image-slider,
-.testi-image-slider .slick-list,
-.testi-image-slider .slick-list .slick-track,
-.testi-image-slider .slick-list .slick-track .slide {
+.testi-image-slider {
     display:flex;
 }
 .testi-image-slider{
@@ -2173,6 +2175,7 @@ ul.address-area-list li a:hover{
     position: fixed; 
     top: 0; 
     left: 0; 
+    min-height: 66.667%;
     width: 40px; 
     background-color: var(--yellowColor); 
     transition: all linear 0.1s; 
@@ -2196,12 +2199,12 @@ ul.address-area-list li a:hover{
     min-height: 840px;
 }
 
-.last-wireframe-section{
-    border-top: 1px solid var(--blackColor);
-}
 .last-wireframe-inner{
+    border-top: 1px solid var(--borderColor);
     padding-top: 100px;
     padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .last-wireframe-inner p,
 .last-wireframe-inner h2 {
@@ -2252,12 +2255,16 @@ ul.other-services-list li{
 }
 .other-service-img-area img{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    transform: scale(1);
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+.other-service-list-wrap:hover .other-service-img-area img{
+    transform: scale(1.2);
 }
 .other-services-content-area{
     display: flex;
@@ -2271,6 +2278,9 @@ ul.other-services-list li{
     margin-bottom: 13px;
     color: var(--blackColor);
     font-weight: var(--fontSemiBold);
+}
+.other-services-content-area h2 a:hover{
+    color: var(--yellowColor);
 }
 .other-services-content-area p{
     font-size: var(--mainfontsize);
@@ -2293,4 +2303,93 @@ ul.other-services-list li{
 .other-service-learn-more a{
     text-decoration: underline !important;
     color: var(--blackColor);
+}
+
+.privacy-policy-inner-wrapper{
+    padding-top: 150px;
+    padding-bottom: 115px;
+}
+.privacy-policy-inner-wrapper p{
+    margin-bottom: 0;
+    padding-bottom: 35px;
+}
+.privacy-policy-inner-wrapper ul{
+    padding-left: 30px;
+    padding-bottom: 0;
+}
+.privacy-policy-inner-wrapper ul li{
+    list-style: disc;
+}
+
+.faq-inner-section{
+    border-top: 1px solid var(--borderColor);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.faq-inner-section h2{
+    font-size: var(--h1FontSize);
+    line-height: var(--normalLineHeight);
+    color: var(--blackColor);
+    font-weight: var(--fontSemiBold);
+}
+ul.faq-list-area li{
+    padding-bottom: 22px;
+}
+ul.faq-list-area li:last-child{
+    padding-bottom: 0;
+}
+.faq-list-cover{
+    display: flex;
+    align-items: flex-start;
+}
+.faq-block-area{
+    flex: 1 1 auto;
+    border: 2px solid var(--borderColor);
+}
+.faq-question-area{
+    font-size: 28px;
+    line-height: var(--normalLineHeight);
+    font-weight: var(--fontNormal);
+    padding: 29px;
+    color: #505D68;
+    cursor: pointer;
+}
+.faq-answer-area{
+    font-size: 24px;
+    line-height: 2.25;
+    font-weight: var(--fontNormal);
+    color: #757575;
+    padding: 0 29px 50px;
+    display: none;
+}
+.plus-minus-sign{
+    width:46px;
+    height: 44px;
+    min-width: 46px;
+    background-color: var(--borderColor);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-left: 4px solid var(--borderColor);
+    margin-top: 27px;
+    margin-left: 4px;
+    transition: all 0.3s ease-in-out;
+}
+.plus-minus-sign.showMinus{
+    background-color: var(--headerBorderColor);
+}
+.plus-minus-sign:before{
+    content: '';
+    position: absolute;
+    background: url(images/plus-icon.svg) no-repeat center center;
+    width: 80%;
+    height: 80%;
+    transition: all 0.3s ease-in-out;
+}
+.plus-minus-sign.showMinus:before{
+    background-image: url(images/minus-icon.svg);
 }
