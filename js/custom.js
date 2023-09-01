@@ -97,7 +97,7 @@ $('.leadership-slider').slick({
   infinite: true,
   slidesToShow: 4,
   centerMode: false,
-  variableWidth: true,  
+  variableWidth: false,  
   prevArrow: $('.leaderPrev'),
   nextArrow: $('.leaderNext'),
   responsive: [
@@ -113,6 +113,7 @@ $('.leadership-slider').slick({
       breakpoint: 768,
       settings: {
         centerMode: true,
+        variableWidth: true,
         slidesToShow: 1,
         infinite: true,
       }
@@ -126,7 +127,7 @@ $('.writer-slider').slick({
   infinite: true,
   slidesToShow: 4,
   centerMode: false,
-  variableWidth: true,  
+  variableWidth: false,  
   prevArrow: $('.writerPrev'),
   nextArrow: $('.writerNext'),
   responsive: [
@@ -142,6 +143,7 @@ $('.writer-slider').slick({
       breakpoint: 768,
       settings: {
         centerMode: true,
+        variableWidth: true,
         slidesToShow: 1,
         infinite: true,
       }

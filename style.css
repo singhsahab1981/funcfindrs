@@ -800,14 +800,17 @@ header .navbar .logo-image img{
 ul.services-list-area{
     display:flex;
     justify-content: space-between;
-    align-items: flex-start;
     margin-top:70px;
 }
 ul.services-list-area li{
     color: var(--servicesTextColor);
     position: relative;
+    display: flex;
+    flex-direction: column;
     padding-left: 60px;
     padding-right: 60px;
+    width: 33.3333%;
+    max-width: 100%;
 }
 ul.services-list-area li span.service-icons{
     display: block;
@@ -827,6 +830,7 @@ ul.services-list-area li h5 a{
 ul.services-list-area li p{
     color: var(--servicesTextColor);
     margin:0;
+    flex: 1 1 auto;
 }
 ul.services-list-area li a{
     color: var(--blackColor);
@@ -1483,7 +1487,12 @@ ul.steps-services-list li p{
     border-left: 1px solid var(--borderColor);
     display: flex;
     flex-direction: column;
-    width: 301px;
+    width: 100%;
+    align-items: center;
+}
+.slide-inner-area{
+    width: 270px;
+    max-width: 100%;
 }
 .leadership-slide .slide-img-area{
     max-width:270px;

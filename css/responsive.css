@@ -111,9 +111,6 @@
     .access-box.access-box-03{
         max-width: 330px;
     }
-    .leadership-slide{
-        width: 280px;
-    }
     .privacy-policy-inner-wrapper{
         padding-top: 100px;
         padding-bottom: 65px;
@@ -635,7 +632,6 @@
     ul.services-list-area li{
         padding-left: 12px;
         padding-right: 12px;
-        width: 33.3333%;
     }
     .services-content-area{
         width: 50%;
@@ -689,7 +685,6 @@
     }
     .leadership-slide{
         padding: 40px 20px;
-        width: 220px;
     }
     .leadership-slide .slide-img-area {
         max-width: 180px;
@@ -1293,6 +1288,7 @@
     }
     .leadership-slide{
         padding: 20px;
+        width: 220px;
     }
     .our-team-inner-area{
         flex-direction: column;
