@@ -53,15 +53,25 @@ if($('.faq-main-section').length){
 $('.menuToggler').click(function(){
   $('#mainMenu, body, html').addClass('activeMenu');
   $('.blank-menu-div').addClass('activeMenu');
+  $('body').removeClass('activeSubMenu');
+})
+$('ul>li.has-dropdown>a').click(function(){
+  $('body').toggleClass('activeSubMenu');  
 })
 $('.blank-menu-div').click(function(){
   $('#mainMenu, body, html').removeClass('activeMenu');
   $(this).removeClass('activeMenu');
+  $('body').removeClass('activeSubMenu');
 });
 $('.menu-close-btn').click(function(){
   $('#mainMenu, body, html').removeClass('activeMenu');
   $('.blank-menu-div').removeClass('activeMenu');
 });
+$('ul>li.has-dropdown>ul').prepend("<button class='close-btn'>Back</button>");
+
+$('.navbar').delegate('.close-btn','click',function(){
+  $('body').removeClass('activeSubMenu');
+})
 
 if($('.scroll-to-top').length){
   $('.scroll-to-top').click(function(){
@@ -251,7 +261,6 @@ for (let i = 1; i <= slickSlide.length; i++) {
     }
   })
 }
-  
   
   
   if( $('.slick-current').find('video.videoSlide').length !== 0) {
