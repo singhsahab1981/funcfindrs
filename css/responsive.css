@@ -15,13 +15,31 @@
         margin-left: 50px;
     }
     .top-main-banner{
-        height: 690px;
+        height: 600px;
+    }
+    .sticket-part{
+        top: 76px;
+    }
+    .home-banner-slider h1{
+        margin-bottom: 30px;
     }
     .book-consultation-btn .btn-area{
         width: 360px;
+        margin-top: 30px;
+    }
+    .secondry-cta-inner{
+        padding: 35px 40px;
     }
     .proposition-image-part {
         min-height: 460px;
+        width: 52%;
+    }
+    .propositions-content-area {
+        width: 48%;
+    }
+    .our-propositions-inner .small-yellow-dot {
+        left: 52%;
+        transform: translateX(-52%);
     }
     .access-box h2{
         font-size: 80px;
@@ -36,7 +54,7 @@
         max-width: 100%;
     }
     .footer-small-text{
-        max-width:80%;
+        max-width:90%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -126,6 +144,16 @@
     .plus-minus-sign{
         margin-top: 20px;
     }
+    .heading-poligon-icon{
+        width:70px;
+        height:54px;
+        margin-right: 12px;
+    }
+    .book-appointment-content.our-story-content .heading-poligon-icon,
+    .contact-us-form-area .book-appointment-content .heading-poligon-icon {
+        width: 34px;
+        height: 24px;
+    }
 }
 
 @media (max-width: 1199.98px){
@@ -188,7 +216,7 @@
     }
     .heading-poligon-icon{
         width: 50px;
-        height: 45px;
+        height: 40px;
     }
     .home-large-blog-area{
         max-height: 480px;
@@ -299,6 +327,11 @@
         height: 38px;
         min-width: 40px;
     }
+    .book-appointment-content.our-story-content .heading-poligon-icon,
+    .contact-us-form-area .book-appointment-content .heading-poligon-icon {
+        width: 30px;
+        height: 20px;
+    }
 }
 
 
@@ -333,17 +366,38 @@
         height: 100%;
         background: #fff;
         box-shadow: 5px 0 50px rgba(0,0,0,.10);
-        z-index: 100;
-        width:250px;    
+        z-index: 110;
+        width:271px;    
         overflow: hidden;
         overflow-y: auto;  
         transform: translateX(-100%);  
         transition: all 0.3s ease 0s;
         align-items: flex-start;
         flex-direction: column;
+        padding-left: 21px;
+    }
+    .mainMenu:before{
+        content:'';
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 20px;
+        height: 66.667%;
+        background: var(--yellowColor);
+        z-index: 111;
+    }
+    .mainMenu:after{
+        content:'';
+        position: absolute;
+        top:0;
+        left: 20px;
+        width: 1px;
+        height: 100%;
+        background: var(--borderColor);
+        z-index: 111;
     }
     .activeMenu.mainMenu{
-        transform: translateX(20px);
+        transform: translateX(0);
     }
     .mainMenu ul{
         position: static;
@@ -448,12 +502,12 @@
         height: 20px;
         right: -10px;
     }
-
-    .home-banner-slider h1{
-        margin-bottom: 30px;
+    .home-banner-slider h1,
+    h1 {
+        margin-bottom: 20px;
     }
     h2{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .pb-60{
         padding-bottom: 40px;
@@ -502,13 +556,20 @@
         clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 0% 100%);
         z-index: -1;
     }
+    .heading-text-area h1,
+    .heading-text-area .breadcrumb-nav {
+        max-width: 70%;
+    }
+    .home-banner-slider .slick-slide{
+        padding-left: 0;
+    }
     .small-yellow-dot{
         width: 20px;
         height: 20px;
     }
     .home-banner-slider .slick-dots{
-        right: 25px;
         bottom: 5px;
+        padding-left: 20px;
     }
     .book-consultation-btn .btn-area{
         margin-top: 20px;
@@ -521,6 +582,17 @@
     }
     .blog-inner-area{
         padding: 30px 20px;
+    }
+    .proposition-image-part {
+        width: 50%;
+    }
+    .propositions-content-area {
+        width: 50%;
+    }
+    .our-propositions-inner .small-yellow-dot {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -11px;
     }
     .our-propositions-inner{
         padding-left: 20px;
@@ -611,9 +683,6 @@
     .top-footer-inner{
         padding: 40px 0 20px;
     }
-    .top-footer-inner h2{
-        margin-bottom: 10px;
-    }
     ul.bottom-social-links{
         margin: 0 0 20px;
         align-items: center;
@@ -674,14 +743,6 @@
     }
     .book-appointment-content.our-story-content {
         padding: 40px 100px;
-    }
-    .book-appointment-content.our-story-content .heading-poligon-icon {
-        width: 45px;
-        height: 35px;
-    }
-    .contact-us-form-area .book-appointment-content .heading-poligon-icon{
-        width: 45px;
-        height: 35px;
     }
     .leadership-slide{
         padding: 40px 20px;
@@ -910,6 +971,9 @@
     .sticket-part {
         top: 56px;
     }
+    .formField{
+        margin-bottom: 22px;
+    }
     header .navbar .show-for-mobile.logo-image {
         padding: 22px 0 22px 20px;
     }
@@ -935,11 +999,7 @@
     header .navbar {
         padding-top: 20px;
         padding-bottom: 20px;
-    }
-    .home-banner-slider h1,
-    h1 {
-        margin-bottom: 15px;
-    }
+    }    
     .top-main-banner {
         height: 500px;
     }
@@ -947,7 +1007,7 @@
         width: 100%;
         max-width:65%;
         padding-bottom: 30px;
-    }
+    }    
     .heading-text-area .book-consultation-btn .btn-area{
         margin-top: 10px;
     }
@@ -978,9 +1038,6 @@
         height: 350px;
         min-height: auto;
     }
-    .our-propositions-inner .small-yellow-dot{        
-        top: -8px;
-    }
     .propositions-content-area{
         width: 100%;
         padding-left: 0;
@@ -997,26 +1054,8 @@
         padding-left: 0;
         padding-right: 0;
     }
-    .sticket-part {
-        top: 58px;
-    }
-    .small-yellow-dot-top {
-        width: 15px;
-        height: 15px;
-        right: -8px;
-    }
-    .small-yellow-dot {
-        width: 15px;
-        height: 15px;
-    }
-    .small-yellow-dot {
-        top: -7px;
-    }
     .home-large-blog-content-area{
         padding: 20px 19px 14px 20px;
-    }
-    .newsletter-inner-area p{
-        margin-bottom: 8px;
     }
     .home-blog-area:first-child{
         padding-bottom: 24px;
@@ -1048,7 +1087,7 @@
         margin-top: 37px;
     }
     ul.services-list-area li span.service-icons{
-        margin-bottom: 15px;
+        margin-bottom: 8px;
     }
     ul.services-list-area li span.service-icons img{
         max-height: 40px;
@@ -1087,7 +1126,8 @@
     .testimonial-content-part .testi-content h5 {
         padding-right: 0;
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
+        align-items: flex-end;
     }
     .testimonial-image-part .testi-slider-navigation {
         display: flex;
@@ -1174,9 +1214,6 @@
         position: absolute;
         bottom: 0;
     }
-    .casestudy-inner-content h2{
-        margin-bottom: 20px;
-    }
     .casestudy-inner-content h2 span{
         border-color: var(--borderColor);
     }
@@ -1197,16 +1234,13 @@
     .blog-inner-area {
         padding: 16px 20px;
     }
-    .heading-poligon-icon {
-        width: 36px;
-        height: 31px;
-    }
     .book-appointment-inner{
         flex-direction: column;
     }
     .book-appointment-content{
         width: 100%; 
         padding-right: 0;
+        padding-top: 0;
     }
     .book-appointment-heading {
         margin-bottom: 20px;
@@ -1232,7 +1266,7 @@
         padding: 30px 20px;
     }
     form .form-control {
-        padding: 15px 20px;
+        padding: 12px;
     }
     .footer-small-text{
         font-size: 12px;
@@ -1384,6 +1418,9 @@
     .blog-listing-content h2 a:hover{
         color: var(--mainColor);
     }
+    .blog-listing-content h2 a:hover span{
+        border-color: var(--mainColor);
+    }
     ul.blog-listing-list li,
     .related-blogs-inner-area ul.blog-listing-list li {
         width: 100%;
@@ -1509,6 +1546,17 @@
         width: 30px;
         height: 28px;
         min-width: 30px;
+    }
+    .book-appointment-content.our-story-content .heading-poligon-icon,
+    .contact-us-form-area .book-appointment-content .heading-poligon-icon {
+        width: 26px;
+        height: 16px;
+    }
+    .newsletter-inner-area h2{
+        margin-bottom: 5px;
+    }
+    .newsletter-inner-area p{
+        margin-bottom: 10px;
     }
 }
 

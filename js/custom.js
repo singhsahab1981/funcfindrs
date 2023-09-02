@@ -71,6 +71,7 @@ if($('.scroll-to-top').length){
 
 if($('.testi-image-slider').length){
 $('.testi-image-slider').slick({
+  infinite: false,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
@@ -82,6 +83,7 @@ $('.testi-image-slider').slick({
 
 if($('.testi-text-slider').length){
 $('.testi-text-slider').slick({
+  infinite: false,
   slidesToShow: 1,
   slidesToScroll: 1,
   asNavFor: '.testi-image-slider',
