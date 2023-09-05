@@ -15,48 +15,49 @@ $(window).scroll(function() {
 });
 
 if($('.faq-main-section').length){
-  $('.faq-question-area').click(function(e) {
-    e.preventDefault();
-    let $this = $(this);
-    if ($this.next().hasClass('showAnswer')) {
-        $this.next().removeClass('showAnswer');
-        $this.parent().parent().find('.plus-minus-sign').removeClass('showMinus');
-        $this.next().slideUp(350);
-    } else {
-        $this.parents().find('li .faq-list-cover .faq-answer-area').removeClass('showAnswer');
-        $this.parents().find('li .faq-list-cover .plus-minus-sign').removeClass('showMinus');
-        $this.parents().find('li .faq-list-cover .faq-answer-area').slideUp(350);
-        $this.next().toggleClass('showAnswer');
-        $this.parent().parent().find('.plus-minus-sign').toggleClass('showMinus');
-        $this.next().slideToggle(350);
-    }
-  });
-  
-  $('.plus-minus-sign').click(function(e) {
-    e.preventDefault();
-    let $this = $(this);
-    if ($this.hasClass('showMinus')) {
-        $this.removeClass('showMinus');
-        $this.parent().find('.faq-answer-area').removeClass('showAnswer');
-        $this.parent().find('.faq-answer-area').slideUp(350);
-    } else {
-        $this.parents().find('li .faq-list-cover .faq-answer-area').removeClass('showAnswer');
-        $this.parents().find('li .faq-list-cover .plus-minus-sign').removeClass('showMinus');
-        $this.parents().find('li .faq-list-cover .faq-answer-area').slideUp(350);
-        $this.toggleClass('showMinus');
-        $this.parent().find('.faq-answer-area').toggleClass('showAnswer');
-        $this.parent().find('.faq-answer-area').slideToggle(350);
-    }
-  });
+$('.faq-question-area').click(function(e) {
+  e.preventDefault();
+  let $this = $(this);
+  if ($this.next().hasClass('showAnswer')) {
+      $this.next().removeClass('showAnswer');
+      $this.parent().parent().find('.plus-minus-sign').removeClass('showMinus');
+      $this.next().slideUp(350);
+  } else {
+      $this.parents().find('li .faq-list-cover .faq-answer-area').removeClass('showAnswer');
+      $this.parents().find('li .faq-list-cover .plus-minus-sign').removeClass('showMinus');
+      $this.parents().find('li .faq-list-cover .faq-answer-area').slideUp(350);
+      $this.next().toggleClass('showAnswer');
+      $this.parent().parent().find('.plus-minus-sign').toggleClass('showMinus');
+      $this.next().slideToggle(350);
   }
+});
+
+$('.plus-minus-sign').click(function(e) {
+  e.preventDefault();
+  let $this = $(this);
+  if ($this.hasClass('showMinus')) {
+      $this.removeClass('showMinus');
+      $this.parent().find('.faq-answer-area').removeClass('showAnswer');
+      $this.parent().find('.faq-answer-area').slideUp(350);
+  } else {
+      $this.parents().find('li .faq-list-cover .faq-answer-area').removeClass('showAnswer');
+      $this.parents().find('li .faq-list-cover .plus-minus-sign').removeClass('showMinus');
+      $this.parents().find('li .faq-list-cover .faq-answer-area').slideUp(350);
+      $this.toggleClass('showMinus');
+      $this.parent().find('.faq-answer-area').toggleClass('showAnswer');
+      $this.parent().find('.faq-answer-area').slideToggle(350);
+  }
+});
+}
 
 $('.menuToggler').click(function(){
   $('#mainMenu, body, html').addClass('activeMenu');
   $('.blank-menu-div').addClass('activeMenu');
   $('body').removeClass('activeSubMenu');
 })
-$('ul>li.has-dropdown>a').click(function(){
+$('body').on('click', 'ul>li.has-dropdown> span',function(){
   $('body').toggleClass('activeSubMenu');  
+  $(this).parent().addClass('activeSubMenuUl');  
 })
 $('.blank-menu-div').click(function(){
   $('#mainMenu, body, html').removeClass('activeMenu');
@@ -65,12 +66,14 @@ $('.blank-menu-div').click(function(){
 });
 $('.menu-close-btn').click(function(){
   $('#mainMenu, body, html').removeClass('activeMenu');
-  $('.blank-menu-div').removeClass('activeMenu');
+  $('.blank-menu-div').removeClass('activeMenu');  
 });
 $('ul>li.has-dropdown>ul').prepend("<button class='close-btn'>Back</button>");
+$('ul>li.has-dropdown').prepend("<span></span>");
 
 $('.navbar').delegate('.close-btn','click',function(){
   $('body').removeClass('activeSubMenu');
+  $('#mainMenu li.has-dropdown').removeClass('activeSubMenuUl');
 })
 
 if($('.scroll-to-top').length){
@@ -81,7 +84,7 @@ if($('.scroll-to-top').length){
 
 if($('.testi-image-slider').length){
 $('.testi-image-slider').slick({
-  infinite: false,
+  infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
@@ -93,7 +96,7 @@ $('.testi-image-slider').slick({
 
 if($('.testi-text-slider').length){
 $('.testi-text-slider').slick({
-  infinite: false,
+  infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   asNavFor: '.testi-image-slider',
@@ -105,138 +108,64 @@ $('.testi-text-slider').slick({
 }
 
 if($('.leadership-slider').length){
-$('.leadership-slider').slick({
-  infinite: true,
-  slidesToShow: 4,
-  centerMode: false,
-  variableWidth: false,  
-  prevArrow: $('.leaderPrev'),
-  nextArrow: $('.leaderNext'),
-  responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        centerMode: false,
-        slidesToShow: 3,
-        infinite: true,
+  $('.leadership-slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    centerMode: false,
+    variableWidth: false,  
+    prevArrow: $('.leaderPrev'),
+    nextArrow: $('.leaderNext'),
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          centerMode: false,
+          slidesToShow: 3,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: true,
+          variableWidth: true,
+          slidesToShow: 1,
+          infinite: true,
+        }
       }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        centerMode: true,
-        variableWidth: true,
-        slidesToShow: 1,
-        infinite: true,
-      }
-    }
-  ]
-});
-}
-
-if($('.writer-slider').length){
-$('.writer-slider').slick({
-  infinite: true,
-  slidesToShow: 4,
-  centerMode: false,
-  variableWidth: false,  
-  prevArrow: $('.writerPrev'),
-  nextArrow: $('.writerNext'),
-  responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        centerMode: false,
-        slidesToShow: 3,
-        infinite: true,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        centerMode: true,
-        variableWidth: true,
-        slidesToShow: 1,
-        infinite: true,
-      }
-    }
-  ]
-});
-}
-
-if($('#appointment-form').length){
-  $("#appointment-form").validate({
-    rules: {
-        yname: "required",
-        bname: "required",
-        email: {
-            required: true,
-            email: true
-        },
-        phone: "required",
-        businessinfo: "required"
-    },
-    messages: {
-        yname: "Please enter your full name",
-        bname: "Please enter your business name",
-        email: "Please enter your valid email address",
-        phone: "Please enter your mobile",
-        businessinfo: "Please let us know about you and your business"
-    },
-    onfocusout: function(element) {
-      return $(element).valid();
-    },
-    submitHandler: function(form) {
-                    
-      }
+    ]
   });
-}
-
-if($('#contact-form').length){
-  $("#contact-form").validate({
-    rules: {
-        yname: "required",
-        email: {
-            required: true,
-            email: true
-        },
-        phone: "required",
-        businessinfo: "required"
-    },
-    messages: {
-        yname: "Please enter your full name",
-        email: "Please enter your valid email address",
-        phone: "Please enter your mobile",
-        businessinfo: "Please let us know about you and your business"
-    },
-    onfocusout: function(element) {
-      return $(element).valid();
-    },
-    submitHandler: function(form) {
-                    
+  }
+  
+  if($('.writer-slider').length){
+  $('.writer-slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    centerMode: false,
+    variableWidth: false,  
+    prevArrow: $('.writerPrev'),
+    nextArrow: $('.writerNext'),
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          centerMode: false,
+          slidesToShow: 3,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: true,
+          variableWidth: true,
+          slidesToShow: 1,
+          infinite: true,
+        }
       }
+    ]
   });
-}
-
-if($('#newsletterForm').length){
-  $("#newsletterForm").validate({
-    rules: {
-        email: {
-            required: true,
-            email: true
-        },
-    },
-    messages: {
-        email: "Please enter your valid email address",
-    },
-    onfocusout: function(element) {
-      return $(element).valid();
-    },
-    submitHandler: function(form) {
-                    
-      }
-  });
-}
+  }
 
 if($('.home-banner-slider').length){
   $('.home-banner-slider').slick({
@@ -261,6 +190,7 @@ for (let i = 1; i <= slickSlide.length; i++) {
     }
   })
 }
+  
   
   
   if( $('.slick-current').find('video.videoSlide').length !== 0) {
@@ -293,22 +223,22 @@ for (let i = 1; i <= slickSlide.length; i++) {
   
 }
 
-if($('#searchForm').length){
-  $("#searchForm").validate({
+if($('#newsletterForm').length){
+  $("#newsletterForm").validate({
     rules: {
-      searchText: {
-        required: true,
-        minlength: 3
-      }
+        email: {
+            required: true,
+            email: true
+        },
     },
     messages: {
-      searchText: {
-        required: "Please enter something search box",
-        minlength: "Please enter at least 3 characters"
-      }
+        email: "Please enter your valid email address",
     },
     onfocusout: function(element) {
       return $(element).valid();
-    }
-});
+    },
+    submitHandler: function(form) {
+                    
+      }
+  });
 }

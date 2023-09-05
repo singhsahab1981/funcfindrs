@@ -14,6 +14,9 @@
     .getstarted-btn {
         margin-left: 50px;
     }
+    .top-banner-area{
+        margin-top: 92px;
+    }
     .top-main-banner{
         height: 600px;
     }
@@ -181,6 +184,12 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    .navbar.navbar-expand-lg .navbar-nav li.has-dropdown ul{
+        left: 20px;
+    }
+    .top-banner-area{
+        margin-top: 77px;
+    }    
     .top-main-banner{
         height: 570px;
     }
@@ -366,7 +375,7 @@
         height: 100%;
         background: #fff;
         box-shadow: 5px 0 50px rgba(0,0,0,.10);
-        z-index: 110;
+        z-index: 120;
         width:271px;    
         overflow: hidden;
         overflow-y: auto;  
@@ -436,13 +445,14 @@
         display: block;
         padding: 15px 20px;
     }
-    .navbar.navbar-expand-lg .navbar-nav li a:hover{
+    .navbar.navbar-expand-lg .navbar-nav li:hover > a{
         background: var(--yellowColor);
-        color: var(--mainColor);
+        color: var(--mainTextColor);
     }
-    .navbar.navbar-expand-lg .navbar-nav li a.active{
+    .navbar.navbar-expand-lg .navbar-nav li a.active,
+    .navbar.navbar-expand-lg .navbar-nav li.has-dropdown ul li a.active {
         background: var(--yellowColor);
-        color: var(--mainColor);
+        color: var(--mainTextColor);
     }
     .navbar .close-btn{
         border:0 none;
@@ -498,7 +508,7 @@
         background: transparent;
         display: none;
     }
-    .activeSubMenu .navbar.navbar-expand-lg .navbar-nav li.has-dropdown ul{
+    .activeSubMenu .navbar.navbar-expand-lg .navbar-nav li.has-dropdown.activeSubMenuUl  ul{
         display: block;
     }
     .navbar.navbar-expand-lg .navbar-nav li.has-dropdown:hover ul{
@@ -506,15 +516,18 @@
     }
     .navbar.navbar-expand-lg .navbar-nav li.has-dropdown ul li{
         padding:0;
+        border-bottom: 1px solid currentColor;
+    }
+    .navbar.navbar-expand-lg .navbar-nav li.has-dropdown ul li:nth-child(1){
+        border-top: 1px solid currentColor;
     }
     .navbar.navbar-expand-lg .navbar-nav li.has-dropdown ul li a{
         color:currentColor;
-        padding: 15px 20px;
-        border-bottom: 1px solid currentColor;
+        padding: 15px 20px; 
+        border-bottom: 0 none;       
     }
     .navbar.navbar-expand-lg .navbar-nav li.has-dropdown ul li a:hover{
-        color: var(--main);
-        border-bottom: 1px solid var(--mainTextColor);
+        color: var(--mainTextColor);
     }
     .navbar.navbar-expand-lg .navbar-nav li.has-dropdown > a::after {
         margin-left: 0;
@@ -527,6 +540,13 @@
     }
     .navbar.navbar-expand-lg .navbar-nav li.has-dropdown ul .close-btn{
         display: block;
+    }
+    .mainMenu .cta-btn.getstarted-btn{
+        transform: translateX(0);
+        transition: all 0.3s ease 0s;
+    }
+    .activeSubMenu .mainMenu .cta-btn.getstarted-btn{
+        transform: translateX(-100%);
     }
 
 
@@ -593,6 +613,9 @@
         max-width: 280px;
         padding-left: 25px;
     }
+    .top-banner-area{
+        margin-top: 76px;
+    } 
     .top-banner-area .inner-container{
         padding: 0;
     }
@@ -635,7 +658,7 @@
     }
     .home-banner-slider .slick-dots{
         bottom: 5px;
-        padding-left: 20px;
+        left: 20px;
     }
     .book-consultation-btn .btn-area{
         margin-top: 20px;
@@ -964,7 +987,7 @@
         max-width: 200px;
     }
     .progress-bar{
-        width: 20px;
+        width: 19px;
     }
     .reverse-proposition-section.our-propositions-inner .propositions-content-area {
         padding-right: 62px;
@@ -1065,7 +1088,10 @@
     header .navbar {
         padding-top: 20px;
         padding-bottom: 20px;
-    }    
+    }   
+    .top-banner-area{
+        margin-top: 67px;
+    }  
     .top-main-banner {
         height: 500px;
     }
@@ -1482,10 +1508,10 @@
         line-height: 1.4;
     }
     .blog-listing-content h2 a:hover{
-        color: var(--mainColor);
+        color: var(--mainTextColor);
     }
     .blog-listing-content h2 a:hover span{
-        border-color: var(--mainColor);
+        border-color: var(--mainTextColor);
     }
     ul.blog-listing-list li,
     .related-blogs-inner-area ul.blog-listing-list li {
