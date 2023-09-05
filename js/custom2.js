@@ -71,3 +71,23 @@ if($('#searchForm').length){
     }
 });
 }
+
+if($('#newsletterForm').length){
+  $("#newsletterForm").validate({
+    rules: {
+        email: {
+            required: true,
+            email: true
+        },
+    },
+    messages: {
+        email: "Please enter your valid email address",
+    },
+    onfocusout: function(element) {
+      return $(element).valid();
+    },
+    submitHandler: function(form) {
+                    
+      }
+  });
+}

@@ -1,3 +1,12 @@
+@media (min-width: 1920.98px){
+    .progress-bar { 
+        left: 0; 
+        right: 0;
+        margin: auto;
+        transform: translate(-940px);
+    }
+}
+
 @media (max-width: 1399.98px){
     :root{
         --mainfontsize: 18px;
@@ -68,7 +77,9 @@
         width: 60%;
     }
     .services-right-steps-image{  
-        flex: 0 0 auto;
+        width: 40%;
+    }
+    .testimonial-image-part{
         width: 40%;
     }
     .membership-area-columns .top-plan-info h2{
@@ -121,6 +132,10 @@
         font-size: 28px;
         line-height: 1.5;
     }
+    ul.services-list-area{
+        margin-left: -40px;
+        margin-right: -40px;
+    }
     ul.services-list-area li{
         padding-left: 40px;
         padding-right: 40px;
@@ -156,6 +171,12 @@
     .contact-us-form-area .book-appointment-content .heading-poligon-icon {
         width: 34px;
         height: 24px;
+    }
+    .book-appointment-form-area{
+        margin-top: 175px;
+    }
+    .casestudy-inner-wrapper .small-yellow-dot{
+        left: 59%;
     }
 }
 
@@ -213,6 +234,10 @@
     .access-box h2{
         font-size: 60px;
     }
+    ul.services-list-area{
+        margin-left: -20px;
+        margin-right: -20px;
+    }
     ul.services-list-area li{
         padding-left: 20px;
         padding-right: 20px;
@@ -250,7 +275,7 @@
     }
     ul.steps-services-list li:after{
         left: 36px;
-        top: 80px;
+        top: 78px;
     }
     ul.steps-services-list li h5 {
         font-size: 28px;
@@ -340,6 +365,13 @@
     .contact-us-form-area .book-appointment-content .heading-poligon-icon {
         width: 30px;
         height: 20px;
+    }
+    .our-services-inner > h5 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    .book-appointment-form-area{
+        margin-top: 163px;
     }
 }
 
@@ -706,10 +738,7 @@
         padding-bottom: 40px;
     }
     .home-casestudy-inner{
-        padding: 0 20px;
-    }
-    .casestudy-inner-content{
-        width: 40%;
+        padding: 0 20px 0 0;
     }
     ul.services-list-area{
         margin-top:40px;
@@ -730,18 +759,17 @@
     }
     .book-appointment-form-area{
         width: 50%;
+        margin-top: 138px;
     }
     .left-line-border{
         padding-left: 20px;
-    }
-    .appointment-content.left-line-border{
-        padding: 0 20px;
+        padding-right: 20px;
     }
     .book-appointment-inner{
         padding-top: 40px;
         padding-bottom: 40px;
         padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 20px; 
     }
     .book-appointment-content .dot-line{
         margin: 30px 0;
@@ -783,16 +811,14 @@
         padding-top: 15px;
         padding-bottom: 40px;
     }
+    .propositions-content-area{
+        padding-left: 20px;
+    }
     .scroll-to-top{
         width: 30px;
         right: -10px; 
     }
-    ul.services-list-area li{
-        padding-left: 12px;
-        padding-right: 12px;
-    }
     .services-content-area{
-        width: 50%;
         padding-top: 40px;
         padding-bottom: 40px;
         padding-left: 20px;
@@ -806,10 +832,6 @@
         padding-bottom: 40px;
         padding-left: 20px;
         padding-right: 20px;
-        width: 50%;
-    }
-    .services-right-steps-image{ 
-        width: 50%;
     }
     ul.steps-services-list li{
         padding-left: 80px;
@@ -873,7 +895,7 @@
     .member-benifits-inner ul.services-list-area li{
         padding: 30px 20px;
     }
-    .testimonial-inner-block{
+    .testimonial-content-part{
         padding-left: 20px;
     }
     .blog-hero-banner-inner {
@@ -990,7 +1012,7 @@
         width: 19px;
     }
     .reverse-proposition-section.our-propositions-inner .propositions-content-area {
-        padding-right: 62px;
+        padding-right: 20px;
         width: 50%;
     }
     .reverse-proposition-section.our-propositions-inner .proposition-image-part {
@@ -1041,6 +1063,10 @@
     .plus-minus-sign {
         margin-top: 17px;
     }
+    .our-services-inner > h5 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 767.98px){
@@ -1054,14 +1080,11 @@
         --formFieldLIneHeight: 1.5;
         --top-blog-label-fontSize: 12px;
         --newsletter-font-size: 14px;
-        --newsletter-line-height: 1.4;        
+        --newsletter-line-height: 1.4;     
     }
 
     .sticket-part {
         top: 56px;
-    }
-    .formField{
-        margin-bottom: 22px;
     }
     header .navbar .show-for-mobile.logo-image {
         padding: 22px 0 22px 20px;
@@ -1171,27 +1194,26 @@
     ul.services-list-area li{
         margin-right: 0;
         margin-top: 25px;
-        padding-left: 0;
-        padding-right: 0;
         width: 100%;
     }
     ul.services-list-area li+li{
         margin-top: 37px;
     }
     ul.services-list-area li span.service-icons{
-        margin-bottom: 8px;
-    }
-    ul.services-list-area li span.service-icons img{
-        max-height: 40px;
+        width: 70px;
+        height: 70px;
+        margin-bottom: 10px;
     }
     .testimonial-content-part{
         width: 100%;
+        padding-left: 0;
     }
     .testimonial-inner-block{
         flex-direction: column;
         padding-top: 40px;
         padding-bottom: 40px;
         padding-right: 20px;
+        padding-left: 20px;
     }
     .testimonial-outer-area .inner-container.zero-pr{
         padding-right: 20px !important;
@@ -1199,11 +1221,18 @@
     .testimonial-image-part{
         width: 100%;
     }
+    .testi-image-slider {
+        height: auto;
+        justify-content: center;
+    }
+    .testi-image-slider .slick-track{
+        height: auto;
+    }
     .testimonial-image-part .slide{
         text-align: center;
     }
     .testimonial-image-part .slide > img{
-        max-width: 348px;
+        max-width: 450px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
@@ -1235,6 +1264,8 @@
     .home-casestudy-inner{
         background: transparent;
         border-top: 0 none;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .casestudy-inner-wrapper{
         flex-direction: column;        
@@ -1274,7 +1305,6 @@
         -webkit-text-stroke: 1px var(--blackColor);
     }
     .proposition-image-part .left-line-border{
-        padding-left: 15px;
         margin-top: 5px;
     }
     .proposition-image-part .left-line-border::before {
@@ -1396,7 +1426,7 @@
         padding-bottom: 40px;
     }    
     .services-right-steps-image img{
-        width: 350px;
+        width: auto;
         min-height: auto;
         top: auto;
         transform: none;
@@ -1508,10 +1538,10 @@
         line-height: 1.4;
     }
     .blog-listing-content h2 a:hover{
-        color: var(--mainTextColor);
+        color: var(--headerBorderColor);
     }
     .blog-listing-content h2 a:hover span{
-        border-color: var(--mainTextColor);
+        border-color: var(--headerBorderColor);
     }
     ul.blog-listing-list li,
     .related-blogs-inner-area ul.blog-listing-list li {
@@ -1649,6 +1679,9 @@
     }
     .newsletter-inner-area p{
         margin-bottom: 10px;
+    }
+    .our-services-inner > h5 {
+        font-size: 18px;
     }
 }
 

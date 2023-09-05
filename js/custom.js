@@ -99,8 +99,11 @@ $('.testi-text-slider').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 7000,
   asNavFor: '.testi-image-slider',
   focusOnSelect: true, 
+  pauseOnHover: false,
   arrows: true,
   prevArrow: $('.testiPrev'),
   nextArrow: $('.testiNext')
@@ -176,6 +179,7 @@ if($('.home-banner-slider').length){
     autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    pauseOnHover: false
   });
 
 const slickSlide = $('.video-slide');
@@ -223,22 +227,3 @@ for (let i = 1; i <= slickSlide.length; i++) {
   
 }
 
-if($('#newsletterForm').length){
-  $("#newsletterForm").validate({
-    rules: {
-        email: {
-            required: true,
-            email: true
-        },
-    },
-    messages: {
-        email: "Please enter your valid email address",
-    },
-    onfocusout: function(element) {
-      return $(element).valid();
-    },
-    submitHandler: function(form) {
-                    
-      }
-  });
-}
